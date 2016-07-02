@@ -1,0 +1,2663 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		0A9EB83F28AF4C06B667574A /* ZERO_CHECK */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 2957C1A221A44D4AA1541561 /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */;
+			buildPhases = (
+				4925B7150D554D8BBDE3BFF9 /* CMake Rules */,
+			);
+			dependencies = (
+			);
+			name = ZERO_CHECK;
+			productName = ZERO_CHECK;
+		};
+		1628472B8699474BB678445C /* ALL_BUILD */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = DB4D2E523AA440DAAF0D29A1 /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */;
+			buildPhases = (
+				95B9E7930D26464FBD920DAC /* CMake Rules */,
+			);
+			dependencies = (
+				E1F5FF6BF4484A24BB93F41C /* PBXTargetDependency */,
+				A047AB2559144097B0BC5416 /* PBXTargetDependency */,
+				41A8781B4A114E8F9F487E63 /* PBXTargetDependency */,
+				2FF5ACFFC13B4F58A55113CF /* PBXTargetDependency */,
+				F9F494009E9E4AFA88C4E9F1 /* PBXTargetDependency */,
+				AED45BCDA59E4AD6B3A6A670 /* PBXTargetDependency */,
+			);
+			name = ALL_BUILD;
+			productName = ALL_BUILD;
+		};
+		5A739FA3408A415F9975B833 /* install */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 2616BC7DB11E47AEA8E812E4 /* Build configuration list for PBXAggregateTarget "install" */;
+			buildPhases = (
+				1E8B48EC27EA4371AAEDF333 /* CMake PostBuild Rules */,
+			);
+			dependencies = (
+				E78EF0959E4F4D4BA46CA355 /* PBXTargetDependency */,
+			);
+			name = install;
+			productName = install;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		03DA6BA96842423E83D998BE /* glui_list.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E82F855F67B143A2A5DDBC35 /* glui_list.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		0450FA4DAD024C459CDB88DE /* glui_bitmaps.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 21792761B8434D93A3F3CC18 /* glui_bitmaps.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		05C84E699392454687B2276F /* glui_radio.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 32894431B4F9424E9015778B /* glui_radio.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		0B8601F246EB465EBAB3EBED /* freeglut_overlay.c in Sources */ = {isa = PBXBuildFile; fileRef = 0E65C666BE95480A9D83C193 /* freeglut_overlay.c */; settings = {COMPILER_FLAGS = ""; }; };
+		0C5BC9B2638849FC89F1C04D /* Main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5C4BE717C20E408381E06182 /* Main.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		0D68BA95709740899898716C /* glui_checkbox.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2225B516C7E4458797EFB9F1 /* glui_checkbox.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		0DC614332AB74AE1BA0F9DFC /* freeglut_videoresize.c in Sources */ = {isa = PBXBuildFile; fileRef = D51E242BC44E426F8EC3C38C /* freeglut_videoresize.c */; settings = {COMPILER_FLAGS = ""; }; };
+		0DCC01E679674112B18C5D85 /* b2ChainAndCircleContact.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6EAD8210603E468DBCC133DC /* b2ChainAndCircleContact.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		0EFBD2369FB24C339C482D1E /* b2Rope.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B91807A52EDD40479097959E /* b2Rope.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		10E0E3818C52456F9BAD8232 /* glui_treepanel.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F933717A1525472693D41DF6 /* glui_treepanel.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		11BB324DAF4E446DAE7E58DD /* b2Timer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 85F76806D0FD4AA784D37995 /* b2Timer.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		13204FDD88B34E36B0853210 /* b2MouseJoint.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5F5D8C2750E4C7D83679880 /* b2MouseJoint.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		15B2FCD619F64FE6B46550AB /* b2Draw.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7F6336DC14874D57ABF08118 /* b2Draw.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		174DFDAE446841598E54CCA3 /* freeglut_menu.c in Sources */ = {isa = PBXBuildFile; fileRef = 7445C760476F4805BE972ED6 /* freeglut_menu.c */; settings = {COMPILER_FLAGS = ""; }; };
+		1A8C4907B5C646A8BEDC3B94 /* glui_scrollbar.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 060A8C1F09674739BCEADDC5 /* glui_scrollbar.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		1BC6F533ECF84116AB6682C0 /* b2Settings.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EF4F36C7E1714C7CBA6A537B /* b2Settings.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		2047261B868B49D48BE18B24 /* TestEntries.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B808AA20895245E89EBBD567 /* TestEntries.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		214BCAA618A74F3781574550 /* glui_button.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7EA4672FFE0D43719DA3AFD4 /* glui_button.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		21669F574C1F4C99B7487A3D /* freeglut_ext.c in Sources */ = {isa = PBXBuildFile; fileRef = E535BEAB802845D993F6D5D2 /* freeglut_ext.c */; settings = {COMPILER_FLAGS = ""; }; };
+		25619811871B461DBEF275D2 /* glui_add_controls.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EB5F68A56A23447FA1844007 /* glui_add_controls.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		26A1939DC61446148F4E9FCE /* algebra3.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9C8BA1DF2D514024BA40EAF5 /* algebra3.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		28FB424578D6411E815AC1E3 /* glui_filebrowser.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7CF0277082014702BB57357D /* glui_filebrowser.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		32208F1B9B974B16AB705376 /* freeglut_stroke_mono_roman.c in Sources */ = {isa = PBXBuildFile; fileRef = 81C9F78AD3F24D1F8D5AE190 /* freeglut_stroke_mono_roman.c */; settings = {COMPILER_FLAGS = ""; }; };
+		35E82C76B35944F2AE2848AE /* glui_commandline.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 443099F4B85940CA927A2477 /* glui_commandline.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		37435D69D6A343168DC8E390 /* glui.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1526F40717AA4EA0BFFBF38E /* glui.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		37D632CE31474179BBBCBA8F /* freeglut_stroke_roman.c in Sources */ = {isa = PBXBuildFile; fileRef = 383A80CC57EB4ABB977E707D /* freeglut_stroke_roman.c */; settings = {COMPILER_FLAGS = ""; }; };
+		392991BCEE2D4313BB119DAD /* b2EdgeShape.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CF89C67E76B444A4A5BE4EE7 /* b2EdgeShape.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		4173507319A6374A0083A32E /* freeglut_gamemode.c in Sources */ = {isa = PBXBuildFile; fileRef = D09868CAB4474A2BB2553487 /* freeglut_gamemode.c */; };
+		4461553BAC074F7383724057 /* freeglut_geometry.c in Sources */ = {isa = PBXBuildFile; fileRef = AF5F9150BBC24700BC6050C4 /* freeglut_geometry.c */; settings = {COMPILER_FLAGS = ""; }; };
+		47EA79C5751745358EF263A1 /* glui_edittext.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B2340CE2E50F4218B7564ED1 /* glui_edittext.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		4A3F93358D91495F8CA1DC41 /* freeglut_callbacks.c in Sources */ = {isa = PBXBuildFile; fileRef = 534CAB6572F84D029969CB8A /* freeglut_callbacks.c */; settings = {COMPILER_FLAGS = ""; }; };
+		4D1AC6FFF9B94D5BAC6575C8 /* freeglut_font_data.c in Sources */ = {isa = PBXBuildFile; fileRef = 23FDA02DC6CE427C8FCED815 /* freeglut_font_data.c */; settings = {COMPILER_FLAGS = ""; }; };
+		4D5EC8F641E44E48806CDBE1 /* b2FrictionJoint.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9C4EBF21037040AABF85FD10 /* b2FrictionJoint.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		530B0BFF95074DBCBD01FC0F /* HelloWorld.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 35486EC67DB24EEAB2047E3A /* HelloWorld.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		5489E74FCF82484FB866FE96 /* b2ChainShape.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A784FF6E6B56434A889AB156 /* b2ChainShape.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		561A0A4524D24F0F8C160B67 /* glui_textbox.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6DEBEB2250CE4706A5070056 /* glui_textbox.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		56656D5071D34DD18D351BA1 /* Test.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FC6DE738A47F47AA8B9DD966 /* Test.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		5849C60D535D4511973BA8C0 /* glui_bitmap_img_data.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 32E61D842906472F9DC15F22 /* glui_bitmap_img_data.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		5946AEA2837C4C5390EA6D32 /* b2ContactManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 39C6E9A8E4A54CAABD87DCFB /* b2ContactManager.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		629370F2C2CE4D87B6C0FF51 /* b2World.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 73915C8CC4D24A3AB61AE884 /* b2World.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		63F7D16A21374AE49DE3041C /* b2Island.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5FA5A3EF5AE34E3493AAC904 /* b2Island.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		64B57E05D98E434DB64FFD9E /* glui_panel.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3539D5137C084A2EA1FA17FB /* glui_panel.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		6A260E25F2334F18B15FF617 /* b2ChainAndPolygonContact.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 65154BAED82D4B2CACF50161 /* b2ChainAndPolygonContact.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		6B316E7E626A45959A9F0910 /* freeglut_init.c in Sources */ = {isa = PBXBuildFile; fileRef = AADFBDFEE6D246E69EE0219D /* freeglut_init.c */; settings = {COMPILER_FLAGS = ""; }; };
+		6BC52303D72D4051AE434F78 /* b2PolygonAndCircleContact.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 845F2351715E4F4AAEE7FD59 /* b2PolygonAndCircleContact.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		6D898359CB91440797C5D3CE /* glui_separator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DD28A74EB4024EA28AF4257A /* glui_separator.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		6E736468789648448B71EE26 /* Render.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A8C110391896460BB25DE2C0 /* Render.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		715AEFC83B7147279BC8F7AE /* b2PolygonShape.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1D67C2D32952493CBABDE32F /* b2PolygonShape.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		73D93736003A41108D98C8A8 /* freeglut_main.c in Sources */ = {isa = PBXBuildFile; fileRef = A35ABD8012364D20A9D4CC0F /* freeglut_main.c */; settings = {COMPILER_FLAGS = ""; }; };
+		748527A6043A4B9CA7752841 /* glui_tree.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F5497B4A1A014E6987594DF4 /* glui_tree.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		7DA481FC3F6140C9B79C0D69 /* b2PolygonContact.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 03B1165E31BA43E795BF8DF1 /* b2PolygonContact.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		7ECBF514D9504911B9C90541 /* b2PrismaticJoint.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0A46F57A6FB64D508C74BBA1 /* b2PrismaticJoint.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		7F4E679AB121449799C8B7CA /* b2Collision.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0931EBE368EC4A8E97F3202A /* b2Collision.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		82DBFE4469694AB1BC32E518 /* b2MotorJoint.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3DFFA01615E24C7488F6A4CC /* b2MotorJoint.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		837BE83F3AEB4F94B8CD01BE /* glui_listbox.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E1267B9080D0412A9031B9AA /* glui_listbox.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		8463FD278B3A4FC1BF9DF728 /* b2Math.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9C6E2581CC9F42D6AA359319 /* b2Math.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		849697FB03BB4ED7BA8180E1 /* freeglut_glutfont_definitions.c in Sources */ = {isa = PBXBuildFile; fileRef = 8CD8AB3E09ED418DB2E03FDF /* freeglut_glutfont_definitions.c */; settings = {COMPILER_FLAGS = ""; }; };
+		8620EC3DE9B44D27B5A224B8 /* freeglut_window.c in Sources */ = {isa = PBXBuildFile; fileRef = B7DED0BEC7E14699B9E5EB8F /* freeglut_window.c */; settings = {COMPILER_FLAGS = ""; }; };
+		863A261887D246DD95819262 /* b2EdgeAndCircleContact.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DEE989E6D0B1468896D69A8A /* b2EdgeAndCircleContact.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		872F1C4C849A4232AAC23CEE /* b2DistanceJoint.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F17DC3567B38447EBED35805 /* b2DistanceJoint.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		910769C771154C8981C03E64 /* arcball.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E758625CF8734E828C3CB526 /* arcball.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		936D06DF9BC24557AE408F43 /* freeglut_input_devices.c in Sources */ = {isa = PBXBuildFile; fileRef = EF3A3A9205944E9D89438068 /* freeglut_input_devices.c */; settings = {COMPILER_FLAGS = ""; }; };
+		9440554F4F0A4F33A194E2F3 /* freeglut_structure.c in Sources */ = {isa = PBXBuildFile; fileRef = 08C8F095DEA7404FA0A75D65 /* freeglut_structure.c */; settings = {COMPILER_FLAGS = ""; }; };
+		94A151CDF0DD4D778EF7A641 /* glui_statictext.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6493EEA883EA4CB880AEEEE9 /* glui_statictext.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		9583F0FD853042B09A414973 /* b2Joint.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1268A4BEB024DFF98BAECFA /* b2Joint.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		99A2535D6EE74274A9337EC5 /* freeglut_teapot.c in Sources */ = {isa = PBXBuildFile; fileRef = 1E58512D5CC54EC1B3449212 /* freeglut_teapot.c */; settings = {COMPILER_FLAGS = ""; }; };
+		99E30F7C9DA940B9B1417CA2 /* b2StackAllocator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 03BF81B670F144109DFEE5AD /* b2StackAllocator.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		9A34ECF7E9F544C18B5FEE09 /* b2EdgeAndPolygonContact.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 67FDE253254346FA9ED2E45F /* b2EdgeAndPolygonContact.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		9CEA88D8B6004D52BA1FCF71 /* b2CollidePolygon.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F04FA320FEEB4225A74034B9 /* b2CollidePolygon.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		9F365E8C32074B8A82613376 /* glui_rotation.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1E3F074AED43436CACD73576 /* glui_rotation.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		A01D347ACDB24810AED2FCFC /* b2CollideCircle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C5F3F0DFF1454DC1BA4721E0 /* b2CollideCircle.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		A12920B0A2CB48869129B1D8 /* glui_string.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0227136F1279478EAAF3344A /* glui_string.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		A460FD80E7604B22B4D8DABC /* freeglut_font.c in Sources */ = {isa = PBXBuildFile; fileRef = 81358DFD0A5E4B559EDBBF99 /* freeglut_font.c */; settings = {COMPILER_FLAGS = ""; }; };
+		A4AE7A303B3747648C822006 /* freeglut_spaceball.c in Sources */ = {isa = PBXBuildFile; fileRef = 594CFC2FAAF84C5BB7F11DC7 /* freeglut_spaceball.c */; settings = {COMPILER_FLAGS = ""; }; };
+		A585C0E58A9C4C4CA22B43C2 /* glui_spinner.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CC20D30666E14480A6F8007B /* glui_spinner.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		A5EFF7CD4BD74FC3B944493D /* freeglut_state.c in Sources */ = {isa = PBXBuildFile; fileRef = 5BDECE00EB1A4D8FB43284AB /* freeglut_state.c */; settings = {COMPILER_FLAGS = ""; }; };
+		B381F113DF2E41FB8D6AEAA5 /* quaternion.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6B056F71CAA947EEB778C8E8 /* quaternion.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		B93B312B4A10480CA7D1C69B /* b2CircleContact.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8746B84C002D438F917473A1 /* b2CircleContact.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		BA2712234C404AFBA6EF059B /* b2WeldJoint.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F8E1E9CBED0648E9A89E97BD /* b2WeldJoint.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		BA8E749208C5451695B6F253 /* glui_rollout.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 29A2552269B248439BE67D3F /* glui_rollout.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		BD1DE538137A48A29A1968B1 /* freeglut_display.c in Sources */ = {isa = PBXBuildFile; fileRef = C814E767C4DD435099E07171 /* freeglut_display.c */; settings = {COMPILER_FLAGS = ""; }; };
+		CA9EF841B1A049BD9137098A /* b2CollideEdge.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 83F54EC6DDF1444DBFF05FA1 /* b2CollideEdge.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		CF03BA668BE24F229DB8FA65 /* glui_translation.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C21C4DB3A5FC4AC59D32D741 /* glui_translation.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		CF16BE5DA9D34E67AB8F6B51 /* b2CircleShape.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 289E94CF9CBB4E4487508721 /* b2CircleShape.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		D0F522BB74B6450F832F640B /* b2WorldCallbacks.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2B5D50CC6D1247E2B52D26A9 /* b2WorldCallbacks.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		D448FAB67F3246FFAD2C16DB /* b2BroadPhase.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3AF08068BC3B4EB895F5F9A8 /* b2BroadPhase.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		D8891FECB6F44D21BFEB929D /* glui_node.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 63B7DCD3816F4B27BC4A890E /* glui_node.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		DD1BD0A607BB4BF4A9BDB07F /* b2RopeJoint.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 938B046F655F44238FDAFE14 /* b2RopeJoint.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		DEFDE77328C542649B02A438 /* glui_mouse_iaction.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 191337B227A54F79A350E1C1 /* glui_mouse_iaction.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		DFA52E67992A431180A28766 /* b2TimeOfImpact.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E217D46F4AF04DA29F6F003A /* b2TimeOfImpact.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		DFBFF9BDAA6E4BF1A18CB195 /* b2Body.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DBC4AEF6EE514C21A590DFFA /* b2Body.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		E11FA4BC4BD2466599006F1F /* freeglut_misc.c in Sources */ = {isa = PBXBuildFile; fileRef = F966BB1A6CF842F38142E999 /* freeglut_misc.c */; settings = {COMPILER_FLAGS = ""; }; };
+		E39F805EC76D4B88903020E1 /* b2GearJoint.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0EE38FE50A1C46A5A4F640ED /* b2GearJoint.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		E4C4929FC035460F8814A714 /* freeglut_joystick.c in Sources */ = {isa = PBXBuildFile; fileRef = 86E4A3BB5CCB4C128A2FE9AB /* freeglut_joystick.c */; settings = {COMPILER_FLAGS = ""; }; };
+		E8A553E9DB56442E98F157FF /* glui_column.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E6D142CB8F01455DB6811158 /* glui_column.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		EA64303C3AE647509041C32D /* b2Distance.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A48F11401F6641A7B952E4FE /* b2Distance.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		EB20FC5FF71C4DDA96DD5BB4 /* b2Contact.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 191E3BF90DCF4FA58FF9EE2D /* b2Contact.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		EB3F6FA99D3E45E28CC99791 /* b2ContactSolver.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6E4DC742AAAC4F9CB62687EF /* b2ContactSolver.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		EFCD6DC22C7544588D132684 /* b2DynamicTree.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E06132905AF5411693313CA8 /* b2DynamicTree.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		F2F702456A8C413693324EE2 /* freeglut_cursor.c in Sources */ = {isa = PBXBuildFile; fileRef = 27AD7BC64399436D952910FB /* freeglut_cursor.c */; settings = {COMPILER_FLAGS = ""; }; };
+		F5E838528AB4495DA264F24F /* b2RevoluteJoint.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8BD492D0107848C8A7BDB1C9 /* b2RevoluteJoint.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		F76711F217B74F248AEB38A1 /* glui_window.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 96C82F42BBAA4135AE1E9653 /* glui_window.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		F895CFDE066D479A851BAA82 /* b2Fixture.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5B450D7903E6460EBA079261 /* b2Fixture.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		F98EEEDDFEC04D95B622287C /* b2PulleyJoint.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D19B2C5E43A242AAB21F5923 /* b2PulleyJoint.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		FE2607A74B004A18BD525C8F /* b2BlockAllocator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BA116AB29D924876912552E6 /* b2BlockAllocator.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		FE823CD9885F4F6E97D7EFE0 /* b2WheelJoint.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9F976D17D1534A1895C3263A /* b2WheelJoint.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		FF988637F6004B03B309DF1C /* glui_control.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E149099250AD4CBC84EFD2DF /* glui_control.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		13DD2AC89EA2446AA3331247 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 99EFFAE99CFC4A21B7C98518 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0A9EB83F28AF4C06B667574A;
+			remoteInfo = ZERO_CHECK;
+		};
+		1642F1AF04D646C1BFD3E074 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 99EFFAE99CFC4A21B7C98518 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B76588D53C094B438B4B3CCD;
+			remoteInfo = Box2D;
+		};
+		353D80C6248F46EA8EACB4F8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 99EFFAE99CFC4A21B7C98518 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9EB052CACC4A464980CA12C5;
+			remoteInfo = freeglut_static;
+		};
+		42E704C244D64235945A4FA0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 99EFFAE99CFC4A21B7C98518 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A4C4E4F27AF04A97B0394DFB;
+			remoteInfo = glui;
+		};
+		511F44D4E86749A7BDBA21DC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 99EFFAE99CFC4A21B7C98518 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0A9EB83F28AF4C06B667574A;
+			remoteInfo = ZERO_CHECK;
+		};
+		5DF24117BB164546A89A8A07 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 99EFFAE99CFC4A21B7C98518 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0A9EB83F28AF4C06B667574A;
+			remoteInfo = ZERO_CHECK;
+		};
+		6A892CB3E05F44F8A9A360FB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 99EFFAE99CFC4A21B7C98518 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B76588D53C094B438B4B3CCD;
+			remoteInfo = Box2D;
+		};
+		75358624B49740D5AA2CC194 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 99EFFAE99CFC4A21B7C98518 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B76588D53C094B438B4B3CCD;
+			remoteInfo = Box2D;
+		};
+		7BE70ACE1AC2495BA0EFB3F2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 99EFFAE99CFC4A21B7C98518 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0A9EB83F28AF4C06B667574A;
+			remoteInfo = ZERO_CHECK;
+		};
+		ADD107CB02F243C99931C421 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 99EFFAE99CFC4A21B7C98518 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0A9EB83F28AF4C06B667574A;
+			remoteInfo = ZERO_CHECK;
+		};
+		B1DFEE885BEE4F59AD03F9E3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 99EFFAE99CFC4A21B7C98518 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0A9EB83F28AF4C06B667574A;
+			remoteInfo = ZERO_CHECK;
+		};
+		B1FD82FA108649DB8648BF67 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 99EFFAE99CFC4A21B7C98518 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9EB052CACC4A464980CA12C5;
+			remoteInfo = freeglut_static;
+		};
+		B58B12C228F44580922E8DCC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 99EFFAE99CFC4A21B7C98518 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A6666BE2FDF04E458E1A0F16;
+			remoteInfo = Testbed;
+		};
+		C16DB68C36AC4A93AC32B7D0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 99EFFAE99CFC4A21B7C98518 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A4C4E4F27AF04A97B0394DFB;
+			remoteInfo = glui;
+		};
+		DC501E77463E43ED88C14A37 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 99EFFAE99CFC4A21B7C98518 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E636D5D326F2462981FF2655;
+			remoteInfo = HelloWorld;
+		};
+		F750573A70D14699A5270149 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 99EFFAE99CFC4A21B7C98518 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1628472B8699474BB678445C;
+			remoteInfo = ALL_BUILD;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		01285E58A3644B8AB64347C2 /* CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; lastKnownFileType = text; name = CMakeLists.txt; path = Box2D/CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		0227136F1279478EAAF3344A /* glui_string.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = glui_string.cpp; path = glui/glui_string.cpp; sourceTree = SOURCE_ROOT; };
+		02C80960054E4BF88BE31D53 /* b2PolygonAndCircleContact.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = b2PolygonAndCircleContact.h; path = Box2D/Dynamics/Contacts/b2PolygonAndCircleContact.h; sourceTree = SOURCE_ROOT; };
+		03B1165E31BA43E795BF8DF1 /* b2PolygonContact.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = b2PolygonContact.cpp; path = Box2D/Dynamics/Contacts/b2PolygonContact.cpp; sourceTree = SOURCE_ROOT; };
+		03BF81B670F144109DFEE5AD /* b2StackAllocator.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = b2StackAllocator.cpp; path = Box2D/Common/b2StackAllocator.cpp; sourceTree = SOURCE_ROOT; };
+		053AF448CDA444429540108C /* b2TimeStep.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = b2TimeStep.h; path = Box2D/Dynamics/b2TimeStep.h; sourceTree = SOURCE_ROOT; };
+		057EB9E7FB934A6693817F21 /* b2RopeJoint.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = b2RopeJoint.h; path = Box2D/Dynamics/Joints/b2RopeJoint.h; sourceTree = SOURCE_ROOT; };
+		060A8C1F09674739BCEADDC5 /* glui_scrollbar.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = glui_scrollbar.cpp; path = glui/glui_scrollbar.cpp; sourceTree = SOURCE_ROOT; };
+		071462D324B046D98E78ABD9 /* b2EdgeShape.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = b2EdgeShape.h; path = Box2D/Collision/Shapes/b2EdgeShape.h; sourceTree = SOURCE_ROOT; };
+		08C8F095DEA7404FA0A75D65 /* freeglut_structure.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = freeglut_structure.c; path = freeglut/freeglut_structure.c; sourceTree = SOURCE_ROOT; };
+		08DDE1B756FD48E18BFABAF3 /* b2StackAllocator.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = b2StackAllocator.h; path = Box2D/Common/b2StackAllocator.h; sourceTree = SOURCE_ROOT; };
+		0931EBE368EC4A8E97F3202A /* b2Collision.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = b2Collision.cpp; path = Box2D/Collision/b2Collision.cpp; sourceTree = SOURCE_ROOT; };
+		0A46F57A6FB64D508C74BBA1 /* b2PrismaticJoint.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = b2PrismaticJoint.cpp; path = Box2D/Dynamics/Joints/b2PrismaticJoint.cpp; sourceTree = SOURCE_ROOT; };
+		0B02F545E8B44AE6BDFF2482 /* b2WeldJoint.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = b2WeldJoint.h; path = Box2D/Dynamics/Joints/b2WeldJoint.h; sourceTree = SOURCE_ROOT; };
+		0DCC4F249B9E4D34957130F3 /* freeglut_teapot_data.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = freeglut_teapot_data.h; path = freeglut/freeglut_teapot_data.h; sourceTree = SOURCE_ROOT; };
+		0E65C666BE95480A9D83C193 /* freeglut_overlay.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = freeglut_overlay.c; path = freeglut/freeglut_overlay.c; sourceTree = SOURCE_ROOT; };
+		0EE38FE50A1C46A5A4F640ED /* b2GearJoint.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = b2GearJoint.cpp; path = Box2D/Dynamics/Joints/b2GearJoint.cpp; sourceTree = SOURCE_ROOT; };
+		0F198BB6D52849EA8F98256E /* TimeOfImpact.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = TimeOfImpact.h; path = Testbed/Tests/TimeOfImpact.h; sourceTree = SOURCE_ROOT; };
+		10A686640B8A47E7814EAD00 /* b2CircleShape.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = b2CircleShape.h; path = Box2D/Collision/Shapes/b2CircleShape.h; sourceTree = SOURCE_ROOT; };
+		10CFD0EBA8F340A38EB57840 /* CollisionProcessing.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = CollisionProcessing.h; path = Testbed/Tests/CollisionProcessing.h; sourceTree = SOURCE_ROOT; };
+		116E6B0569E640C9805E811F /* Gears.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = Gears.h; path = Testbed/Tests/Gears.h; sourceTree = SOURCE_ROOT; };
+		13205A40F64D4519B758997E /* b2DistanceJoint.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = b2DistanceJoint.h; path = Box2D/Dynamics/Joints/b2DistanceJoint.h; sourceTree = SOURCE_ROOT; };
+		13E2389DED744B1F8ADD2CFD /* b2EdgeAndCircleContact.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = b2EdgeAndCircleContact.h; path = Box2D/Dynamics/Contacts/b2EdgeAndCircleContact.h; sourceTree = SOURCE_ROOT; };
+		1526F40717AA4EA0BFFBF38E /* glui.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = glui.cpp; path = glui/glui.cpp; sourceTree = SOURCE_ROOT; };
+		191337B227A54F79A350E1C1 /* glui_mouse_iaction.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = glui_mouse_iaction.cpp; path = glui/glui_mouse_iaction.cpp; sourceTree = SOURCE_ROOT; };
+		191E3BF90DCF4FA58FF9EE2D /* b2Contact.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = b2Contact.cpp; path = Box2D/Dynamics/Contacts/b2Contact.cpp; sourceTree = SOURCE_ROOT; };
+		1A15CA7776EE45228ECABC1E /* b2ContactSolver.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = b2ContactSolver.h; path = Box2D/Dynamics/Contacts/b2ContactSolver.h; sourceTree = SOURCE_ROOT; };
+		1C610E3D79024F819382782C /* b2Joint.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = b2Joint.h; path = Box2D/Dynamics/Joints/b2Joint.h; sourceTree = SOURCE_ROOT; };
+		1CE0CE4D883C426488FE0663 /* b2FrictionJoint.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = b2FrictionJoint.h; path = Box2D/Dynamics/Joints/b2FrictionJoint.h; sourceTree = SOURCE_ROOT; };
+		1D67C2D32952493CBABDE32F /* b2PolygonShape.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = b2PolygonShape.cpp; path = Box2D/Collision/Shapes/b2PolygonShape.cpp; sourceTree = SOURCE_ROOT; };
+		1E0F5BC0589D4E4285F337F3 /* ShapeEditing.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = ShapeEditing.h; path = Testbed/Tests/ShapeEditing.h; sourceTree = SOURCE_ROOT; };
+		1E3F074AED43436CACD73576 /* glui_rotation.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = glui_rotation.cpp; path = glui/glui_rotation.cpp; sourceTree = SOURCE_ROOT; };
+		1E58512D5CC54EC1B3449212 /* freeglut_teapot.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = freeglut_teapot.c; path = freeglut/freeglut_teapot.c; sourceTree = SOURCE_ROOT; };
+		1F5FAD5855354C649C14E9C3 /* b2Shape.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = b2Shape.h; path = Box2D/Collision/Shapes/b2Shape.h; sourceTree = SOURCE_ROOT; };
+		2094C95977364D8095652498 /* b2EdgeAndPolygonContact.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = b2EdgeAndPolygonContact.h; path = Box2D/Dynamics/Contacts/b2EdgeAndPolygonContact.h; sourceTree = SOURCE_ROOT; };
+		21792761B8434D93A3F3CC18 /* glui_bitmaps.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = glui_bitmaps.cpp; path = glui/glui_bitmaps.cpp; sourceTree = SOURCE_ROOT; };
+		2225B516C7E4458797EFB9F1 /* glui_checkbox.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = glui_checkbox.cpp; path = glui/glui_checkbox.cpp; sourceTree = SOURCE_ROOT; };
+		23FDA02DC6CE427C8FCED815 /* freeglut_font_data.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = freeglut_font_data.c; path = freeglut/freeglut_font_data.c; sourceTree = SOURCE_ROOT; };
+		256E601EFDAF424C82F5766D /* EdgeTest.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = EdgeTest.h; path = Testbed/Tests/EdgeTest.h; sourceTree = SOURCE_ROOT; };
+		25C8502F548946758CA08116 /* CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; lastKnownFileType = text; name = CMakeLists.txt; path = glui/CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		271879EB13DF4C6BA8002433 /* Pinball.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = Pinball.h; path = Testbed/Tests/Pinball.h; sourceTree = SOURCE_ROOT; };
+		27AD7BC64399436D952910FB /* freeglut_cursor.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = freeglut_cursor.c; path = freeglut/freeglut_cursor.c; sourceTree = SOURCE_ROOT; };
+		289E94CF9CBB4E4487508721 /* b2CircleShape.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = b2CircleShape.cpp; path = Box2D/Collision/Shapes/b2CircleShape.cpp; sourceTree = SOURCE_ROOT; };
+		29A2552269B248439BE67D3F /* glui_rollout.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = glui_rollout.cpp; path = glui/glui_rollout.cpp; sourceTree = SOURCE_ROOT; };
+		2A74C9DC22514EDD99E1005E /* Breakable.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = Breakable.h; path = Testbed/Tests/Breakable.h; sourceTree = SOURCE_ROOT; };
+		2AFBBEAC23374462A136E216 /* freeglut_ext.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = freeglut_ext.h; path = freeglut/freeglut_ext.h; sourceTree = SOURCE_ROOT; };
+		2B5D50CC6D1247E2B52D26A9 /* b2WorldCallbacks.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = b2WorldCallbacks.cpp; path = Box2D/Dynamics/b2WorldCallbacks.cpp; sourceTree = SOURCE_ROOT; };
+		2BDEFEAA5399425597962274 /* b2PrismaticJoint.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = b2PrismaticJoint.h; path = Box2D/Dynamics/Joints/b2PrismaticJoint.h; sourceTree = SOURCE_ROOT; };
+		2F8A1C907FB2410F9DB5CF77 /* b2Fixture.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = b2Fixture.h; path = Box2D/Dynamics/b2Fixture.h; sourceTree = SOURCE_ROOT; };
+		32894431B4F9424E9015778B /* glui_radio.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = glui_radio.cpp; path = glui/glui_radio.cpp; sourceTree = SOURCE_ROOT; };
+		32E61D842906472F9DC15F22 /* glui_bitmap_img_data.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = glui_bitmap_img_data.cpp; path = glui/glui_bitmap_img_data.cpp; sourceTree = SOURCE_ROOT; };
+		3539D5137C084A2EA1FA17FB /* glui_panel.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = glui_panel.cpp; path = glui/glui_panel.cpp; sourceTree = SOURCE_ROOT; };
+		35486EC67DB24EEAB2047E3A /* HelloWorld.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = HelloWorld.cpp; path = HelloWorld/HelloWorld.cpp; sourceTree = SOURCE_ROOT; };
+		383A80CC57EB4ABB977E707D /* freeglut_stroke_roman.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = freeglut_stroke_roman.c; path = freeglut/freeglut_stroke_roman.c; sourceTree = SOURCE_ROOT; };
+		39C6E9A8E4A54CAABD87DCFB /* b2ContactManager.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = b2ContactManager.cpp; path = Box2D/Dynamics/b2ContactManager.cpp; sourceTree = SOURCE_ROOT; };
+		3AF08068BC3B4EB895F5F9A8 /* b2BroadPhase.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = b2BroadPhase.cpp; path = Box2D/Collision/b2BroadPhase.cpp; sourceTree = SOURCE_ROOT; };
+		3BE7C6E46C88460283604B1B /* b2Body.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = b2Body.h; path = Box2D/Dynamics/b2Body.h; sourceTree = SOURCE_ROOT; };
+		3CB678ED12D444F49B960B43 /* VerticalStack.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = VerticalStack.h; path = Testbed/Tests/VerticalStack.h; sourceTree = SOURCE_ROOT; };
+		3D644D33FE3846C581148FF0 /* DynamicTreeTest.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = DynamicTreeTest.h; path = Testbed/Tests/DynamicTreeTest.h; sourceTree = SOURCE_ROOT; };
+		3DFFA01615E24C7488F6A4CC /* b2MotorJoint.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = b2MotorJoint.cpp; path = Box2D/Dynamics/Joints/b2MotorJoint.cpp; sourceTree = SOURCE_ROOT; };
+		407ECBA100384AADA6915637 /* b2PulleyJoint.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = b2PulleyJoint.h; path = Box2D/Dynamics/Joints/b2PulleyJoint.h; sourceTree = SOURCE_ROOT; };
+		4080C325CA024BDCB1574D89 /* PolyCollision.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = PolyCollision.h; path = Testbed/Tests/PolyCollision.h; sourceTree = SOURCE_ROOT; };
+		42938693CB6C450DAE756F53 /* VaryingRestitution.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = VaryingRestitution.h; path = Testbed/Tests/VaryingRestitution.h; sourceTree = SOURCE_ROOT; };
+		4349967AF13240BBA4F8BCAB /* libBox2D.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libBox2D.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		443099F4B85940CA927A2477 /* glui_commandline.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = glui_commandline.cpp; path = glui/glui_commandline.cpp; sourceTree = SOURCE_ROOT; };
+		4482393A9F4247CC95069D66 /* b2ChainAndPolygonContact.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = b2ChainAndPolygonContact.h; path = Box2D/Dynamics/Contacts/b2ChainAndPolygonContact.h; sourceTree = SOURCE_ROOT; };
+		46F3491A39DF445F99724742 /* freeglut_std.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = freeglut_std.h; path = freeglut/freeglut_std.h; sourceTree = SOURCE_ROOT; };
+		48A7375833454E22BEED8524 /* Rope.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = Rope.h; path = Testbed/Tests/Rope.h; sourceTree = SOURCE_ROOT; };
+		4D0BCE752DE14DEA96916731 /* RopeJoint.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = RopeJoint.h; path = Testbed/Tests/RopeJoint.h; sourceTree = SOURCE_ROOT; };
+		4DBC1719F0604A1CBC5F1A0B /* TheoJansen.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = TheoJansen.h; path = Testbed/Tests/TheoJansen.h; sourceTree = SOURCE_ROOT; };
+		4EC45C002F824F50BE012A54 /* b2GearJoint.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = b2GearJoint.h; path = Box2D/Dynamics/Joints/b2GearJoint.h; sourceTree = SOURCE_ROOT; };
+		4ECB0948FF5F489EAAEBF150 /* Revolute.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = Revolute.h; path = Testbed/Tests/Revolute.h; sourceTree = SOURCE_ROOT; };
+		4F0DD4499EF742BF93064CB4 /* Test.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = Test.h; path = Testbed/Framework/Test.h; sourceTree = SOURCE_ROOT; };
+		51F6F1AAD61943DBB6FEF47B /* ApplyForce.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = ApplyForce.h; path = Testbed/Tests/ApplyForce.h; sourceTree = SOURCE_ROOT; };
+		529B8F38F8AB470380FFF3AD /* b2WorldCallbacks.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = b2WorldCallbacks.h; path = Box2D/Dynamics/b2WorldCallbacks.h; sourceTree = SOURCE_ROOT; };
+		52AC222150E5482F8D9A5328 /* b2World.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = b2World.h; path = Box2D/Dynamics/b2World.h; sourceTree = SOURCE_ROOT; };
+		534CAB6572F84D029969CB8A /* freeglut_callbacks.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = freeglut_callbacks.c; path = freeglut/freeglut_callbacks.c; sourceTree = SOURCE_ROOT; };
+		58DE333EBC9D4E60BA13F13B /* CompoundShapes.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = CompoundShapes.h; path = Testbed/Tests/CompoundShapes.h; sourceTree = SOURCE_ROOT; };
+		59314F0FCF4C47E8B099367B /* Pyramid.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = Pyramid.h; path = Testbed/Tests/Pyramid.h; sourceTree = SOURCE_ROOT; };
+		594CFC2FAAF84C5BB7F11DC7 /* freeglut_spaceball.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = freeglut_spaceball.c; path = freeglut/freeglut_spaceball.c; sourceTree = SOURCE_ROOT; };
+		5B450D7903E6460EBA079261 /* b2Fixture.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = b2Fixture.cpp; path = Box2D/Dynamics/b2Fixture.cpp; sourceTree = SOURCE_ROOT; };
+		5BDECE00EB1A4D8FB43284AB /* freeglut_state.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = freeglut_state.c; path = freeglut/freeglut_state.c; sourceTree = SOURCE_ROOT; };
+		5C1D4721F3734EAC80C7FB01 /* b2PolygonContact.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = b2PolygonContact.h; path = Box2D/Dynamics/Contacts/b2PolygonContact.h; sourceTree = SOURCE_ROOT; };
+		5C4BE717C20E408381E06182 /* Main.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = Main.cpp; path = Testbed/Framework/Main.cpp; sourceTree = SOURCE_ROOT; };
+		5D7E8BDF842B4EC98608D304 /* DumpShell.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = DumpShell.h; path = Testbed/Tests/DumpShell.h; sourceTree = SOURCE_ROOT; };
+		5FA5A3EF5AE34E3493AAC904 /* b2Island.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = b2Island.cpp; path = Box2D/Dynamics/b2Island.cpp; sourceTree = SOURCE_ROOT; };
+		633B0115BA70406581B4D83F /* b2PolygonShape.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = b2PolygonShape.h; path = Box2D/Collision/Shapes/b2PolygonShape.h; sourceTree = SOURCE_ROOT; };
+		63B7DCD3816F4B27BC4A890E /* glui_node.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = glui_node.cpp; path = glui/glui_node.cpp; sourceTree = SOURCE_ROOT; };
+		6493EEA883EA4CB880AEEEE9 /* glui_statictext.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = glui_statictext.cpp; path = glui/glui_statictext.cpp; sourceTree = SOURCE_ROOT; };
+		65154BAED82D4B2CACF50161 /* b2ChainAndPolygonContact.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = b2ChainAndPolygonContact.cpp; path = Box2D/Dynamics/Contacts/b2ChainAndPolygonContact.cpp; sourceTree = SOURCE_ROOT; };
+		661CBF699B96442FAED34F96 /* Chain.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = Chain.h; path = Testbed/Tests/Chain.h; sourceTree = SOURCE_ROOT; };
+		67FDE253254346FA9ED2E45F /* b2EdgeAndPolygonContact.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = b2EdgeAndPolygonContact.cpp; path = Box2D/Dynamics/Contacts/b2EdgeAndPolygonContact.cpp; sourceTree = SOURCE_ROOT; };
+		69E4FE3DC9CE4EF2B2258812 /* EdgeShapes.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = EdgeShapes.h; path = Testbed/Tests/EdgeShapes.h; sourceTree = SOURCE_ROOT; };
+		6A4826E4FC054E229C06907D /* SliderCrank.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = SliderCrank.h; path = Testbed/Tests/SliderCrank.h; sourceTree = SOURCE_ROOT; };
+		6B056F71CAA947EEB778C8E8 /* quaternion.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = quaternion.cpp; path = glui/quaternion.cpp; sourceTree = SOURCE_ROOT; };
+		6DEBEB2250CE4706A5070056 /* glui_textbox.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = glui_textbox.cpp; path = glui/glui_textbox.cpp; sourceTree = SOURCE_ROOT; };
+		6E4DC742AAAC4F9CB62687EF /* b2ContactSolver.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = b2ContactSolver.cpp; path = Box2D/Dynamics/Contacts/b2ContactSolver.cpp; sourceTree = SOURCE_ROOT; };
+		6EAD8210603E468DBCC133DC /* b2ChainAndCircleContact.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = b2ChainAndCircleContact.cpp; path = Box2D/Dynamics/Contacts/b2ChainAndCircleContact.cpp; sourceTree = SOURCE_ROOT; };
+		73915C8CC4D24A3AB61AE884 /* b2World.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = b2World.cpp; path = Box2D/Dynamics/b2World.cpp; sourceTree = SOURCE_ROOT; };
+		7445C760476F4805BE972ED6 /* freeglut_menu.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = freeglut_menu.c; path = freeglut/freeglut_menu.c; sourceTree = SOURCE_ROOT; };
+		750E0C2B7AD641C9BDA45254 /* SphereStack.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = SphereStack.h; path = Testbed/Tests/SphereStack.h; sourceTree = SOURCE_ROOT; };
+		7C415BF8B1B949DE992A86C7 /* b2Math.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = b2Math.h; path = Box2D/Common/b2Math.h; sourceTree = SOURCE_ROOT; };
+		7CF0277082014702BB57357D /* glui_filebrowser.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = glui_filebrowser.cpp; path = glui/glui_filebrowser.cpp; sourceTree = SOURCE_ROOT; };
+		7EA4672FFE0D43719DA3AFD4 /* glui_button.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = glui_button.cpp; path = glui/glui_button.cpp; sourceTree = SOURCE_ROOT; };
+		7EDBD99CB26E46A4A73303B8 /* b2Distance.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = b2Distance.h; path = Box2D/Collision/b2Distance.h; sourceTree = SOURCE_ROOT; };
+		7F6336DC14874D57ABF08118 /* b2Draw.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = b2Draw.cpp; path = Box2D/Common/b2Draw.cpp; sourceTree = SOURCE_ROOT; };
+		81358DFD0A5E4B559EDBBF99 /* freeglut_font.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = freeglut_font.c; path = freeglut/freeglut_font.c; sourceTree = SOURCE_ROOT; };
+		8150356F4D0D46DD928B2FA5 /* b2Island.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = b2Island.h; path = Box2D/Dynamics/b2Island.h; sourceTree = SOURCE_ROOT; };
+		81C9F78AD3F24D1F8D5AE190 /* freeglut_stroke_mono_roman.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = freeglut_stroke_mono_roman.c; path = freeglut/freeglut_stroke_mono_roman.c; sourceTree = SOURCE_ROOT; };
+		83E11A674397401180B99138 /* RayCast.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = RayCast.h; path = Testbed/Tests/RayCast.h; sourceTree = SOURCE_ROOT; };
+		83F54EC6DDF1444DBFF05FA1 /* b2CollideEdge.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = b2CollideEdge.cpp; path = Box2D/Collision/b2CollideEdge.cpp; sourceTree = SOURCE_ROOT; };
+		845F2351715E4F4AAEE7FD59 /* b2PolygonAndCircleContact.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = b2PolygonAndCircleContact.cpp; path = Box2D/Dynamics/Contacts/b2PolygonAndCircleContact.cpp; sourceTree = SOURCE_ROOT; };
+		85508A19E31A42BFBC888396 /* CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; lastKnownFileType = text; name = CMakeLists.txt; path = freeglut/CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		855DBF04D3864C7BA4BBD642 /* b2CircleContact.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = b2CircleContact.h; path = Box2D/Dynamics/Contacts/b2CircleContact.h; sourceTree = SOURCE_ROOT; };
+		85D0B0079565481BA6E1D741 /* BodyTypes.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = BodyTypes.h; path = Testbed/Tests/BodyTypes.h; sourceTree = SOURCE_ROOT; };
+		85F76806D0FD4AA784D37995 /* b2Timer.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = b2Timer.cpp; path = Box2D/Common/b2Timer.cpp; sourceTree = SOURCE_ROOT; };
+		863073CA43B94522B4B81FDB /* PolyShapes.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = PolyShapes.h; path = Testbed/Tests/PolyShapes.h; sourceTree = SOURCE_ROOT; };
+		86E4A3BB5CCB4C128A2FE9AB /* freeglut_joystick.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = freeglut_joystick.c; path = freeglut/freeglut_joystick.c; sourceTree = SOURCE_ROOT; };
+		87080A3C90FD4945909718D6 /* b2BlockAllocator.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = b2BlockAllocator.h; path = Box2D/Common/b2BlockAllocator.h; sourceTree = SOURCE_ROOT; };
+		8746B84C002D438F917473A1 /* b2CircleContact.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = b2CircleContact.cpp; path = Box2D/Dynamics/Contacts/b2CircleContact.cpp; sourceTree = SOURCE_ROOT; };
+		8BD492D0107848C8A7BDB1C9 /* b2RevoluteJoint.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = b2RevoluteJoint.cpp; path = Box2D/Dynamics/Joints/b2RevoluteJoint.cpp; sourceTree = SOURCE_ROOT; };
+		8BE4037DC190483E9D4BAF88 /* b2TimeOfImpact.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = b2TimeOfImpact.h; path = Box2D/Collision/b2TimeOfImpact.h; sourceTree = SOURCE_ROOT; };
+		8CD8AB3E09ED418DB2E03FDF /* freeglut_glutfont_definitions.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = freeglut_glutfont_definitions.c; path = freeglut/freeglut_glutfont_definitions.c; sourceTree = SOURCE_ROOT; };
+		8CFCE0B6E6B3481A9421BBEF /* b2Collision.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = b2Collision.h; path = Box2D/Collision/b2Collision.h; sourceTree = SOURCE_ROOT; };
+		905CA9E709C74551A19ED2B8 /* freeglut.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = freeglut.h; path = freeglut/freeglut.h; sourceTree = SOURCE_ROOT; };
+		9343C21E7975407B9B93D0CD /* BulletTest.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = BulletTest.h; path = Testbed/Tests/BulletTest.h; sourceTree = SOURCE_ROOT; };
+		938B046F655F44238FDAFE14 /* b2RopeJoint.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = b2RopeJoint.cpp; path = Box2D/Dynamics/Joints/b2RopeJoint.cpp; sourceTree = SOURCE_ROOT; };
+		96C82F42BBAA4135AE1E9653 /* glui_window.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = glui_window.cpp; path = glui/glui_window.cpp; sourceTree = SOURCE_ROOT; };
+		987F7BE9DDC44B5CAC1F2024 /* b2RevoluteJoint.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = b2RevoluteJoint.h; path = Box2D/Dynamics/Joints/b2RevoluteJoint.h; sourceTree = SOURCE_ROOT; };
+		9C4EBF21037040AABF85FD10 /* b2FrictionJoint.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = b2FrictionJoint.cpp; path = Box2D/Dynamics/Joints/b2FrictionJoint.cpp; sourceTree = SOURCE_ROOT; };
+		9C6E2581CC9F42D6AA359319 /* b2Math.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = b2Math.cpp; path = Box2D/Common/b2Math.cpp; sourceTree = SOURCE_ROOT; };
+		9C8BA1DF2D514024BA40EAF5 /* algebra3.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = algebra3.cpp; path = glui/algebra3.cpp; sourceTree = SOURCE_ROOT; };
+		9D86661D71AA4973AA745B30 /* b2ChainShape.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = b2ChainShape.h; path = Box2D/Collision/Shapes/b2ChainShape.h; sourceTree = SOURCE_ROOT; };
+		9E0223562A724556BF925D80 /* b2Rope.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = b2Rope.h; path = Box2D/Rope/b2Rope.h; sourceTree = SOURCE_ROOT; };
+		9E6F53CA6F4748AE8C2FB5F7 /* Cantilever.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = Cantilever.h; path = Testbed/Tests/Cantilever.h; sourceTree = SOURCE_ROOT; };
+		9EF19FEED62A44DB9B38A573 /* freeglut_internal.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = freeglut_internal.h; path = freeglut/freeglut_internal.h; sourceTree = SOURCE_ROOT; };
+		9F976D17D1534A1895C3263A /* b2WheelJoint.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = b2WheelJoint.cpp; path = Box2D/Dynamics/Joints/b2WheelJoint.cpp; sourceTree = SOURCE_ROOT; };
+		A2604DA8410C432FA9C65A62 /* b2BroadPhase.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = b2BroadPhase.h; path = Box2D/Collision/b2BroadPhase.h; sourceTree = SOURCE_ROOT; };
+		A2F962E6A48948489D11DE50 /* b2ContactManager.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = b2ContactManager.h; path = Box2D/Dynamics/b2ContactManager.h; sourceTree = SOURCE_ROOT; };
+		A35ABD8012364D20A9D4CC0F /* freeglut_main.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = freeglut_main.c; path = freeglut/freeglut_main.c; sourceTree = SOURCE_ROOT; };
+		A48F11401F6641A7B952E4FE /* b2Distance.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = b2Distance.cpp; path = Box2D/Collision/b2Distance.cpp; sourceTree = SOURCE_ROOT; };
+		A784FF6E6B56434A889AB156 /* b2ChainShape.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = b2ChainShape.cpp; path = Box2D/Collision/Shapes/b2ChainShape.cpp; sourceTree = SOURCE_ROOT; };
+		A7A274E639C443E8935867A4 /* AddPair.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = AddPair.h; path = Testbed/Tests/AddPair.h; sourceTree = SOURCE_ROOT; };
+		A8C110391896460BB25DE2C0 /* Render.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = Render.cpp; path = Testbed/Framework/Render.cpp; sourceTree = SOURCE_ROOT; };
+		A97373FC0E2A4511825F45A8 /* b2Contact.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = b2Contact.h; path = Box2D/Dynamics/Contacts/b2Contact.h; sourceTree = SOURCE_ROOT; };
+		AA0191FC340C444F8DCC31E3 /* libglui.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libglui.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		AADFBDFEE6D246E69EE0219D /* freeglut_init.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = freeglut_init.c; path = freeglut/freeglut_init.c; sourceTree = SOURCE_ROOT; };
+		AB5EAE9ECAD845F480379561 /* CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; lastKnownFileType = text; name = CMakeLists.txt; path = HelloWorld/CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		AEB4C7910CEE43E19AE40215 /* Prismatic.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = Prismatic.h; path = Testbed/Tests/Prismatic.h; sourceTree = SOURCE_ROOT; };
+		AF5F9150BBC24700BC6050C4 /* freeglut_geometry.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = freeglut_geometry.c; path = freeglut/freeglut_geometry.c; sourceTree = SOURCE_ROOT; };
+		AFF4E2CAAEF64A61BE4F9D0A /* VaryingFriction.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = VaryingFriction.h; path = Testbed/Tests/VaryingFriction.h; sourceTree = SOURCE_ROOT; };
+		B2340CE2E50F4218B7564ED1 /* glui_edittext.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = glui_edittext.cpp; path = glui/glui_edittext.cpp; sourceTree = SOURCE_ROOT; };
+		B2F5665117054653A683256C /* HelloWorld */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; path = HelloWorld; sourceTree = BUILT_PRODUCTS_DIR; };
+		B5F5D8C2750E4C7D83679880 /* b2MouseJoint.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = b2MouseJoint.cpp; path = Box2D/Dynamics/Joints/b2MouseJoint.cpp; sourceTree = SOURCE_ROOT; };
+		B7DED0BEC7E14699B9E5EB8F /* freeglut_window.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = freeglut_window.c; path = freeglut/freeglut_window.c; sourceTree = SOURCE_ROOT; };
+		B808AA20895245E89EBBD567 /* TestEntries.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = TestEntries.cpp; path = Testbed/Tests/TestEntries.cpp; sourceTree = SOURCE_ROOT; };
+		B91807A52EDD40479097959E /* b2Rope.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = b2Rope.cpp; path = Box2D/Rope/b2Rope.cpp; sourceTree = SOURCE_ROOT; };
+		BA116AB29D924876912552E6 /* b2BlockAllocator.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = b2BlockAllocator.cpp; path = Box2D/Common/b2BlockAllocator.cpp; sourceTree = SOURCE_ROOT; };
+		BA4CD342E787427891711E27 /* Testbed */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; path = Testbed; sourceTree = BUILT_PRODUCTS_DIR; };
+		BAF6821F4A0A46B0AECDB79A /* OneSidedPlatform.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = OneSidedPlatform.h; path = Testbed/Tests/OneSidedPlatform.h; sourceTree = SOURCE_ROOT; };
+		C21C4DB3A5FC4AC59D32D741 /* glui_translation.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = glui_translation.cpp; path = glui/glui_translation.cpp; sourceTree = SOURCE_ROOT; };
+		C5F3F0DFF1454DC1BA4721E0 /* b2CollideCircle.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = b2CollideCircle.cpp; path = Box2D/Collision/b2CollideCircle.cpp; sourceTree = SOURCE_ROOT; };
+		C814E767C4DD435099E07171 /* freeglut_display.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = freeglut_display.c; path = freeglut/freeglut_display.c; sourceTree = SOURCE_ROOT; };
+		C8FD612B742B4DA981755BBE /* b2ChainAndCircleContact.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = b2ChainAndCircleContact.h; path = Box2D/Dynamics/Contacts/b2ChainAndCircleContact.h; sourceTree = SOURCE_ROOT; };
+		C944DD740F3F4DC69A928C02 /* Box2D.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = Box2D.h; path = Box2D/Box2D.h; sourceTree = SOURCE_ROOT; };
+		CC20D30666E14480A6F8007B /* glui_spinner.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = glui_spinner.cpp; path = glui/glui_spinner.cpp; sourceTree = SOURCE_ROOT; };
+		CC94B42B4F0B4385B6A3AEB5 /* b2MouseJoint.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = b2MouseJoint.h; path = Box2D/Dynamics/Joints/b2MouseJoint.h; sourceTree = SOURCE_ROOT; };
+		CC97554B7B7D4D22BD40D90C /* SensorTest.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = SensorTest.h; path = Testbed/Tests/SensorTest.h; sourceTree = SOURCE_ROOT; };
+		CE009CE1EB124EA8B7A47209 /* b2Draw.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = b2Draw.h; path = Box2D/Common/b2Draw.h; sourceTree = SOURCE_ROOT; };
+		CF36B6918B914FBCB0FA57CC /* Tiles.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = Tiles.h; path = Testbed/Tests/Tiles.h; sourceTree = SOURCE_ROOT; };
+		CF89C67E76B444A4A5BE4EE7 /* b2EdgeShape.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = b2EdgeShape.cpp; path = Box2D/Collision/Shapes/b2EdgeShape.cpp; sourceTree = SOURCE_ROOT; };
+		D09868CAB4474A2BB2553487 /* freeglut_gamemode.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = freeglut_gamemode.c; path = freeglut/freeglut_gamemode.c; sourceTree = SOURCE_ROOT; };
+		D19B2C5E43A242AAB21F5923 /* b2PulleyJoint.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = b2PulleyJoint.cpp; path = Box2D/Dynamics/Joints/b2PulleyJoint.cpp; sourceTree = SOURCE_ROOT; };
+		D4F4E58CD8C647BDA7F3DEF9 /* Bridge.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = Bridge.h; path = Testbed/Tests/Bridge.h; sourceTree = SOURCE_ROOT; };
+		D51E242BC44E426F8EC3C38C /* freeglut_videoresize.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = freeglut_videoresize.c; path = freeglut/freeglut_videoresize.c; sourceTree = SOURCE_ROOT; };
+		D6281803580C4B9CB2AFBBE5 /* b2MotorJoint.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = b2MotorJoint.h; path = Box2D/Dynamics/Joints/b2MotorJoint.h; sourceTree = SOURCE_ROOT; };
+		D6E6AA3753D54A82835BE6B3 /* ContinuousTest.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = ContinuousTest.h; path = Testbed/Tests/ContinuousTest.h; sourceTree = SOURCE_ROOT; };
+		D715AAFAF31749528EA6D151 /* Render.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = Render.h; path = Testbed/Framework/Render.h; sourceTree = SOURCE_ROOT; };
+		D949EA6FB34243AD8EA47E26 /* Confined.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = Confined.h; path = Testbed/Tests/Confined.h; sourceTree = SOURCE_ROOT; };
+		DB2F658713D84941A27527E8 /* b2WheelJoint.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = b2WheelJoint.h; path = Box2D/Dynamics/Joints/b2WheelJoint.h; sourceTree = SOURCE_ROOT; };
+		DBC4AEF6EE514C21A590DFFA /* b2Body.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = b2Body.cpp; path = Box2D/Dynamics/b2Body.cpp; sourceTree = SOURCE_ROOT; };
+		DC7684FECABC4490830EED7A /* CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; lastKnownFileType = text; name = CMakeLists.txt; path = Testbed/CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		DD28A74EB4024EA28AF4257A /* glui_separator.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = glui_separator.cpp; path = glui/glui_separator.cpp; sourceTree = SOURCE_ROOT; };
+		DE928FA55BA74EB39413BE10 /* Pulleys.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = Pulleys.h; path = Testbed/Tests/Pulleys.h; sourceTree = SOURCE_ROOT; };
+		DEE989E6D0B1468896D69A8A /* b2EdgeAndCircleContact.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = b2EdgeAndCircleContact.cpp; path = Box2D/Dynamics/Contacts/b2EdgeAndCircleContact.cpp; sourceTree = SOURCE_ROOT; };
+		DFE9388F9F8046B2A1FB272A /* b2GrowableStack.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = b2GrowableStack.h; path = Box2D/Common/b2GrowableStack.h; sourceTree = SOURCE_ROOT; };
+		E06132905AF5411693313CA8 /* b2DynamicTree.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = b2DynamicTree.cpp; path = Box2D/Collision/b2DynamicTree.cpp; sourceTree = SOURCE_ROOT; };
+		E1267B9080D0412A9031B9AA /* glui_listbox.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = glui_listbox.cpp; path = glui/glui_listbox.cpp; sourceTree = SOURCE_ROOT; };
+		E149099250AD4CBC84EFD2DF /* glui_control.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = glui_control.cpp; path = glui/glui_control.cpp; sourceTree = SOURCE_ROOT; };
+		E217D46F4AF04DA29F6F003A /* b2TimeOfImpact.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = b2TimeOfImpact.cpp; path = Box2D/Collision/b2TimeOfImpact.cpp; sourceTree = SOURCE_ROOT; };
+		E2B31C90CA7E48CAACF0F868 /* Web.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = Web.h; path = Testbed/Tests/Web.h; sourceTree = SOURCE_ROOT; };
+		E2F4A4295E604DF2BBCEBCBA /* b2Timer.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = b2Timer.h; path = Box2D/Common/b2Timer.h; sourceTree = SOURCE_ROOT; };
+		E535BEAB802845D993F6D5D2 /* freeglut_ext.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = freeglut_ext.c; path = freeglut/freeglut_ext.c; sourceTree = SOURCE_ROOT; };
+		E6D142CB8F01455DB6811158 /* glui_column.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = glui_column.cpp; path = glui/glui_column.cpp; sourceTree = SOURCE_ROOT; };
+		E758625CF8734E828C3CB526 /* arcball.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = arcball.cpp; path = glui/arcball.cpp; sourceTree = SOURCE_ROOT; };
+		E82F855F67B143A2A5DDBC35 /* glui_list.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = glui_list.cpp; path = glui/glui_list.cpp; sourceTree = SOURCE_ROOT; };
+		EB5F68A56A23447FA1844007 /* glui_add_controls.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = glui_add_controls.cpp; path = glui/glui_add_controls.cpp; sourceTree = SOURCE_ROOT; };
+		EE5AAAAE20FD44CFA10F6AE6 /* CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; lastKnownFileType = text; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		EF3A3A9205944E9D89438068 /* freeglut_input_devices.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = freeglut_input_devices.c; path = freeglut/freeglut_input_devices.c; sourceTree = SOURCE_ROOT; };
+		EF4F36C7E1714C7CBA6A537B /* b2Settings.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = b2Settings.cpp; path = Box2D/Common/b2Settings.cpp; sourceTree = SOURCE_ROOT; };
+		F04FA320FEEB4225A74034B9 /* b2CollidePolygon.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = b2CollidePolygon.cpp; path = Box2D/Collision/b2CollidePolygon.cpp; sourceTree = SOURCE_ROOT; };
+		F07351241E254998B4F95C6A /* CharacterCollision.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = CharacterCollision.h; path = Testbed/Tests/CharacterCollision.h; sourceTree = SOURCE_ROOT; };
+		F1268A4BEB024DFF98BAECFA /* b2Joint.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = b2Joint.cpp; path = Box2D/Dynamics/Joints/b2Joint.cpp; sourceTree = SOURCE_ROOT; };
+		F15DBCFB0F9F4537B9AF50B4 /* Dominos.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = Dominos.h; path = Testbed/Tests/Dominos.h; sourceTree = SOURCE_ROOT; };
+		F17DC3567B38447EBED35805 /* b2DistanceJoint.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = b2DistanceJoint.cpp; path = Box2D/Dynamics/Joints/b2DistanceJoint.cpp; sourceTree = SOURCE_ROOT; };
+		F25F97FDD6D04256BD71BA74 /* DistanceTest.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = DistanceTest.h; path = Testbed/Tests/DistanceTest.h; sourceTree = SOURCE_ROOT; };
+		F2E58360781F4AD085AB56FB /* b2Settings.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = b2Settings.h; path = Box2D/Common/b2Settings.h; sourceTree = SOURCE_ROOT; };
+		F337AF0E377344A688489393 /* CollisionFiltering.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = CollisionFiltering.h; path = Testbed/Tests/CollisionFiltering.h; sourceTree = SOURCE_ROOT; };
+		F5497B4A1A014E6987594DF4 /* glui_tree.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = glui_tree.cpp; path = glui/glui_tree.cpp; sourceTree = SOURCE_ROOT; };
+		F8E1E9CBED0648E9A89E97BD /* b2WeldJoint.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = b2WeldJoint.cpp; path = Box2D/Dynamics/Joints/b2WeldJoint.cpp; sourceTree = SOURCE_ROOT; };
+		F90EE1C4CC1D4CFBACCA0C19 /* Car.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = Car.h; path = Testbed/Tests/Car.h; sourceTree = SOURCE_ROOT; };
+		F933717A1525472693D41DF6 /* glui_treepanel.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = glui_treepanel.cpp; path = glui/glui_treepanel.cpp; sourceTree = SOURCE_ROOT; };
+		F966BB1A6CF842F38142E999 /* freeglut_misc.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = freeglut_misc.c; path = freeglut/freeglut_misc.c; sourceTree = SOURCE_ROOT; };
+		FBE9C75A666149BF97ED203F /* b2DynamicTree.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = b2DynamicTree.h; path = Box2D/Collision/b2DynamicTree.h; sourceTree = SOURCE_ROOT; };
+		FBF2735501114C94A0E0EFC5 /* libfreeglut_static.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libfreeglut_static.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		FC6DE738A47F47AA8B9DD966 /* Test.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = Test.cpp; path = Testbed/Framework/Test.cpp; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		02460A806CC34E9FAA1CDA7A /* freeglut_static */ = {
+			isa = PBXGroup;
+			children = (
+				7D812A7A951F47A1ABA721DE /* Source Files */,
+				6D4ACF1B0F414807B187C300 /* Header Files */,
+				85508A19E31A42BFBC888396 /* CMakeLists.txt */,
+			);
+			name = freeglut_static;
+			sourceTree = "<group>";
+		};
+		0BC982236C7643D6A35A610C /* Dynamics */ = {
+			isa = PBXGroup;
+			children = (
+				234AA48A10BC48039E793C46 /* Joints */,
+				1C6A7321A9A240AB99136EA5 /* Contacts */,
+				DBC4AEF6EE514C21A590DFFA /* b2Body.cpp */,
+				3BE7C6E46C88460283604B1B /* b2Body.h */,
+				39C6E9A8E4A54CAABD87DCFB /* b2ContactManager.cpp */,
+				A2F962E6A48948489D11DE50 /* b2ContactManager.h */,
+				5B450D7903E6460EBA079261 /* b2Fixture.cpp */,
+				2F8A1C907FB2410F9DB5CF77 /* b2Fixture.h */,
+				5FA5A3EF5AE34E3493AAC904 /* b2Island.cpp */,
+				8150356F4D0D46DD928B2FA5 /* b2Island.h */,
+				053AF448CDA444429540108C /* b2TimeStep.h */,
+				73915C8CC4D24A3AB61AE884 /* b2World.cpp */,
+				52AC222150E5482F8D9A5328 /* b2World.h */,
+				2B5D50CC6D1247E2B52D26A9 /* b2WorldCallbacks.cpp */,
+				529B8F38F8AB470380FFF3AD /* b2WorldCallbacks.h */,
+			);
+			name = Dynamics;
+			sourceTree = "<group>";
+		};
+		18D3EA09D18A4C2EBA52553F /* Collision */ = {
+			isa = PBXGroup;
+			children = (
+				6DC9D40DBEF54D9E89E548C7 /* Shapes */,
+				3AF08068BC3B4EB895F5F9A8 /* b2BroadPhase.cpp */,
+				A2604DA8410C432FA9C65A62 /* b2BroadPhase.h */,
+				C5F3F0DFF1454DC1BA4721E0 /* b2CollideCircle.cpp */,
+				83F54EC6DDF1444DBFF05FA1 /* b2CollideEdge.cpp */,
+				F04FA320FEEB4225A74034B9 /* b2CollidePolygon.cpp */,
+				0931EBE368EC4A8E97F3202A /* b2Collision.cpp */,
+				8CFCE0B6E6B3481A9421BBEF /* b2Collision.h */,
+				A48F11401F6641A7B952E4FE /* b2Distance.cpp */,
+				7EDBD99CB26E46A4A73303B8 /* b2Distance.h */,
+				E06132905AF5411693313CA8 /* b2DynamicTree.cpp */,
+				FBE9C75A666149BF97ED203F /* b2DynamicTree.h */,
+				E217D46F4AF04DA29F6F003A /* b2TimeOfImpact.cpp */,
+				8BE4037DC190483E9D4BAF88 /* b2TimeOfImpact.h */,
+			);
+			name = Collision;
+			sourceTree = "<group>";
+		};
+		1C6A7321A9A240AB99136EA5 /* Contacts */ = {
+			isa = PBXGroup;
+			children = (
+				6EAD8210603E468DBCC133DC /* b2ChainAndCircleContact.cpp */,
+				C8FD612B742B4DA981755BBE /* b2ChainAndCircleContact.h */,
+				65154BAED82D4B2CACF50161 /* b2ChainAndPolygonContact.cpp */,
+				4482393A9F4247CC95069D66 /* b2ChainAndPolygonContact.h */,
+				8746B84C002D438F917473A1 /* b2CircleContact.cpp */,
+				855DBF04D3864C7BA4BBD642 /* b2CircleContact.h */,
+				191E3BF90DCF4FA58FF9EE2D /* b2Contact.cpp */,
+				A97373FC0E2A4511825F45A8 /* b2Contact.h */,
+				6E4DC742AAAC4F9CB62687EF /* b2ContactSolver.cpp */,
+				1A15CA7776EE45228ECABC1E /* b2ContactSolver.h */,
+				DEE989E6D0B1468896D69A8A /* b2EdgeAndCircleContact.cpp */,
+				13E2389DED744B1F8ADD2CFD /* b2EdgeAndCircleContact.h */,
+				67FDE253254346FA9ED2E45F /* b2EdgeAndPolygonContact.cpp */,
+				2094C95977364D8095652498 /* b2EdgeAndPolygonContact.h */,
+				845F2351715E4F4AAEE7FD59 /* b2PolygonAndCircleContact.cpp */,
+				02C80960054E4BF88BE31D53 /* b2PolygonAndCircleContact.h */,
+				03B1165E31BA43E795BF8DF1 /* b2PolygonContact.cpp */,
+				5C1D4721F3734EAC80C7FB01 /* b2PolygonContact.h */,
+			);
+			name = Contacts;
+			sourceTree = "<group>";
+		};
+		1E195D3861354C03A0BBB974 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				A7A274E639C443E8935867A4 /* AddPair.h */,
+				51F6F1AAD61943DBB6FEF47B /* ApplyForce.h */,
+				85D0B0079565481BA6E1D741 /* BodyTypes.h */,
+				2A74C9DC22514EDD99E1005E /* Breakable.h */,
+				D4F4E58CD8C647BDA7F3DEF9 /* Bridge.h */,
+				9343C21E7975407B9B93D0CD /* BulletTest.h */,
+				9E6F53CA6F4748AE8C2FB5F7 /* Cantilever.h */,
+				F90EE1C4CC1D4CFBACCA0C19 /* Car.h */,
+				661CBF699B96442FAED34F96 /* Chain.h */,
+				F07351241E254998B4F95C6A /* CharacterCollision.h */,
+				F337AF0E377344A688489393 /* CollisionFiltering.h */,
+				10CFD0EBA8F340A38EB57840 /* CollisionProcessing.h */,
+				58DE333EBC9D4E60BA13F13B /* CompoundShapes.h */,
+				D949EA6FB34243AD8EA47E26 /* Confined.h */,
+				D6E6AA3753D54A82835BE6B3 /* ContinuousTest.h */,
+				F25F97FDD6D04256BD71BA74 /* DistanceTest.h */,
+				F15DBCFB0F9F4537B9AF50B4 /* Dominos.h */,
+				5D7E8BDF842B4EC98608D304 /* DumpShell.h */,
+				3D644D33FE3846C581148FF0 /* DynamicTreeTest.h */,
+				69E4FE3DC9CE4EF2B2258812 /* EdgeShapes.h */,
+				256E601EFDAF424C82F5766D /* EdgeTest.h */,
+				116E6B0569E640C9805E811F /* Gears.h */,
+				BAF6821F4A0A46B0AECDB79A /* OneSidedPlatform.h */,
+				271879EB13DF4C6BA8002433 /* Pinball.h */,
+				4080C325CA024BDCB1574D89 /* PolyCollision.h */,
+				863073CA43B94522B4B81FDB /* PolyShapes.h */,
+				AEB4C7910CEE43E19AE40215 /* Prismatic.h */,
+				DE928FA55BA74EB39413BE10 /* Pulleys.h */,
+				59314F0FCF4C47E8B099367B /* Pyramid.h */,
+				83E11A674397401180B99138 /* RayCast.h */,
+				4ECB0948FF5F489EAAEBF150 /* Revolute.h */,
+				48A7375833454E22BEED8524 /* Rope.h */,
+				4D0BCE752DE14DEA96916731 /* RopeJoint.h */,
+				CC97554B7B7D4D22BD40D90C /* SensorTest.h */,
+				1E0F5BC0589D4E4285F337F3 /* ShapeEditing.h */,
+				6A4826E4FC054E229C06907D /* SliderCrank.h */,
+				750E0C2B7AD641C9BDA45254 /* SphereStack.h */,
+				B808AA20895245E89EBBD567 /* TestEntries.cpp */,
+				4DBC1719F0604A1CBC5F1A0B /* TheoJansen.h */,
+				CF36B6918B914FBCB0FA57CC /* Tiles.h */,
+				0F198BB6D52849EA8F98256E /* TimeOfImpact.h */,
+				AFF4E2CAAEF64A61BE4F9D0A /* VaryingFriction.h */,
+				42938693CB6C450DAE756F53 /* VaryingRestitution.h */,
+				3CB678ED12D444F49B960B43 /* VerticalStack.h */,
+				E2B31C90CA7E48CAACF0F868 /* Web.h */,
+			);
+			name = Tests;
+			sourceTree = "<group>";
+		};
+		234AA48A10BC48039E793C46 /* Joints */ = {
+			isa = PBXGroup;
+			children = (
+				F17DC3567B38447EBED35805 /* b2DistanceJoint.cpp */,
+				13205A40F64D4519B758997E /* b2DistanceJoint.h */,
+				9C4EBF21037040AABF85FD10 /* b2FrictionJoint.cpp */,
+				1CE0CE4D883C426488FE0663 /* b2FrictionJoint.h */,
+				0EE38FE50A1C46A5A4F640ED /* b2GearJoint.cpp */,
+				4EC45C002F824F50BE012A54 /* b2GearJoint.h */,
+				F1268A4BEB024DFF98BAECFA /* b2Joint.cpp */,
+				1C610E3D79024F819382782C /* b2Joint.h */,
+				3DFFA01615E24C7488F6A4CC /* b2MotorJoint.cpp */,
+				D6281803580C4B9CB2AFBBE5 /* b2MotorJoint.h */,
+				B5F5D8C2750E4C7D83679880 /* b2MouseJoint.cpp */,
+				CC94B42B4F0B4385B6A3AEB5 /* b2MouseJoint.h */,
+				0A46F57A6FB64D508C74BBA1 /* b2PrismaticJoint.cpp */,
+				2BDEFEAA5399425597962274 /* b2PrismaticJoint.h */,
+				D19B2C5E43A242AAB21F5923 /* b2PulleyJoint.cpp */,
+				407ECBA100384AADA6915637 /* b2PulleyJoint.h */,
+				8BD492D0107848C8A7BDB1C9 /* b2RevoluteJoint.cpp */,
+				987F7BE9DDC44B5CAC1F2024 /* b2RevoluteJoint.h */,
+				938B046F655F44238FDAFE14 /* b2RopeJoint.cpp */,
+				057EB9E7FB934A6693817F21 /* b2RopeJoint.h */,
+				F8E1E9CBED0648E9A89E97BD /* b2WeldJoint.cpp */,
+				0B02F545E8B44AE6BDFF2482 /* b2WeldJoint.h */,
+				9F976D17D1534A1895C3263A /* b2WheelJoint.cpp */,
+				DB2F658713D84941A27527E8 /* b2WheelJoint.h */,
+			);
+			name = Joints;
+			sourceTree = "<group>";
+		};
+		40EFF5661D8E40E4B18B8E40 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				BA116AB29D924876912552E6 /* b2BlockAllocator.cpp */,
+				87080A3C90FD4945909718D6 /* b2BlockAllocator.h */,
+				7F6336DC14874D57ABF08118 /* b2Draw.cpp */,
+				CE009CE1EB124EA8B7A47209 /* b2Draw.h */,
+				DFE9388F9F8046B2A1FB272A /* b2GrowableStack.h */,
+				9C6E2581CC9F42D6AA359319 /* b2Math.cpp */,
+				7C415BF8B1B949DE992A86C7 /* b2Math.h */,
+				EF4F36C7E1714C7CBA6A537B /* b2Settings.cpp */,
+				F2E58360781F4AD085AB56FB /* b2Settings.h */,
+				03BF81B670F144109DFEE5AD /* b2StackAllocator.cpp */,
+				08DDE1B756FD48E18BFABAF3 /* b2StackAllocator.h */,
+				85F76806D0FD4AA784D37995 /* b2Timer.cpp */,
+				E2F4A4295E604DF2BBCEBCBA /* b2Timer.h */,
+			);
+			name = Common;
+			sourceTree = "<group>";
+		};
+		4F1AEA85218B4EB9B480E72D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4349967AF13240BBA4F8BCAB /* libBox2D.a */,
+				B2F5665117054653A683256C /* HelloWorld */,
+				FBF2735501114C94A0E0EFC5 /* libfreeglut_static.a */,
+				AA0191FC340C444F8DCC31E3 /* libglui.a */,
+				BA4CD342E787427891711E27 /* Testbed */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6276777946F34666A0A53CEF /* glui */ = {
+			isa = PBXGroup;
+			children = (
+				834753C3D7EC46198A3776D8 /* Source Files */,
+				25C8502F548946758CA08116 /* CMakeLists.txt */,
+			);
+			name = glui;
+			sourceTree = "<group>";
+		};
+		66FF2B548DE646199E49C60C /* Testbed */ = {
+			isa = PBXGroup;
+			children = (
+				79D6139F4573489F95B078D0 /* Framework */,
+				1E195D3861354C03A0BBB974 /* Tests */,
+				DC7684FECABC4490830EED7A /* CMakeLists.txt */,
+			);
+			name = Testbed;
+			sourceTree = "<group>";
+		};
+		673947EE4BEF4AC6B53B5E70 /* CMake Rules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "CMake Rules";
+			sourceTree = "<group>";
+		};
+		6D4ACF1B0F414807B187C300 /* Header Files */ = {
+			isa = PBXGroup;
+			children = (
+				905CA9E709C74551A19ED2B8 /* freeglut.h */,
+				2AFBBEAC23374462A136E216 /* freeglut_ext.h */,
+				9EF19FEED62A44DB9B38A573 /* freeglut_internal.h */,
+				46F3491A39DF445F99724742 /* freeglut_std.h */,
+				0DCC4F249B9E4D34957130F3 /* freeglut_teapot_data.h */,
+			);
+			name = "Header Files";
+			sourceTree = "<group>";
+		};
+		6DC9D40DBEF54D9E89E548C7 /* Shapes */ = {
+			isa = PBXGroup;
+			children = (
+				A784FF6E6B56434A889AB156 /* b2ChainShape.cpp */,
+				9D86661D71AA4973AA745B30 /* b2ChainShape.h */,
+				289E94CF9CBB4E4487508721 /* b2CircleShape.cpp */,
+				10A686640B8A47E7814EAD00 /* b2CircleShape.h */,
+				CF89C67E76B444A4A5BE4EE7 /* b2EdgeShape.cpp */,
+				071462D324B046D98E78ABD9 /* b2EdgeShape.h */,
+				1D67C2D32952493CBABDE32F /* b2PolygonShape.cpp */,
+				633B0115BA70406581B4D83F /* b2PolygonShape.h */,
+				1F5FAD5855354C649C14E9C3 /* b2Shape.h */,
+			);
+			name = Shapes;
+			sourceTree = "<group>";
+		};
+		7233DF8E923849E68BE96052 /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				35486EC67DB24EEAB2047E3A /* HelloWorld.cpp */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		79D6139F4573489F95B078D0 /* Framework */ = {
+			isa = PBXGroup;
+			children = (
+				5C4BE717C20E408381E06182 /* Main.cpp */,
+				A8C110391896460BB25DE2C0 /* Render.cpp */,
+				D715AAFAF31749528EA6D151 /* Render.h */,
+				FC6DE738A47F47AA8B9DD966 /* Test.cpp */,
+				4F0DD4499EF742BF93064CB4 /* Test.h */,
+			);
+			name = Framework;
+			sourceTree = "<group>";
+		};
+		7D812A7A951F47A1ABA721DE /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				534CAB6572F84D029969CB8A /* freeglut_callbacks.c */,
+				27AD7BC64399436D952910FB /* freeglut_cursor.c */,
+				C814E767C4DD435099E07171 /* freeglut_display.c */,
+				E535BEAB802845D993F6D5D2 /* freeglut_ext.c */,
+				81358DFD0A5E4B559EDBBF99 /* freeglut_font.c */,
+				23FDA02DC6CE427C8FCED815 /* freeglut_font_data.c */,
+				D09868CAB4474A2BB2553487 /* freeglut_gamemode.c */,
+				AF5F9150BBC24700BC6050C4 /* freeglut_geometry.c */,
+				8CD8AB3E09ED418DB2E03FDF /* freeglut_glutfont_definitions.c */,
+				AADFBDFEE6D246E69EE0219D /* freeglut_init.c */,
+				EF3A3A9205944E9D89438068 /* freeglut_input_devices.c */,
+				86E4A3BB5CCB4C128A2FE9AB /* freeglut_joystick.c */,
+				A35ABD8012364D20A9D4CC0F /* freeglut_main.c */,
+				7445C760476F4805BE972ED6 /* freeglut_menu.c */,
+				F966BB1A6CF842F38142E999 /* freeglut_misc.c */,
+				0E65C666BE95480A9D83C193 /* freeglut_overlay.c */,
+				594CFC2FAAF84C5BB7F11DC7 /* freeglut_spaceball.c */,
+				5BDECE00EB1A4D8FB43284AB /* freeglut_state.c */,
+				81C9F78AD3F24D1F8D5AE190 /* freeglut_stroke_mono_roman.c */,
+				383A80CC57EB4ABB977E707D /* freeglut_stroke_roman.c */,
+				08C8F095DEA7404FA0A75D65 /* freeglut_structure.c */,
+				1E58512D5CC54EC1B3449212 /* freeglut_teapot.c */,
+				D51E242BC44E426F8EC3C38C /* freeglut_videoresize.c */,
+				B7DED0BEC7E14699B9E5EB8F /* freeglut_window.c */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		80E3D7643D5A49658A56473F /* ZERO_CHECK */ = {
+			isa = PBXGroup;
+			children = (
+				F8032B6A614E470985ACB70B /* CMake Rules */,
+				EE5AAAAE20FD44CFA10F6AE6 /* CMakeLists.txt */,
+			);
+			name = ZERO_CHECK;
+			sourceTree = "<group>";
+		};
+		834753C3D7EC46198A3776D8 /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				9C8BA1DF2D514024BA40EAF5 /* algebra3.cpp */,
+				E758625CF8734E828C3CB526 /* arcball.cpp */,
+				1526F40717AA4EA0BFFBF38E /* glui.cpp */,
+				EB5F68A56A23447FA1844007 /* glui_add_controls.cpp */,
+				32E61D842906472F9DC15F22 /* glui_bitmap_img_data.cpp */,
+				21792761B8434D93A3F3CC18 /* glui_bitmaps.cpp */,
+				7EA4672FFE0D43719DA3AFD4 /* glui_button.cpp */,
+				2225B516C7E4458797EFB9F1 /* glui_checkbox.cpp */,
+				E6D142CB8F01455DB6811158 /* glui_column.cpp */,
+				443099F4B85940CA927A2477 /* glui_commandline.cpp */,
+				E149099250AD4CBC84EFD2DF /* glui_control.cpp */,
+				B2340CE2E50F4218B7564ED1 /* glui_edittext.cpp */,
+				7CF0277082014702BB57357D /* glui_filebrowser.cpp */,
+				E82F855F67B143A2A5DDBC35 /* glui_list.cpp */,
+				E1267B9080D0412A9031B9AA /* glui_listbox.cpp */,
+				191337B227A54F79A350E1C1 /* glui_mouse_iaction.cpp */,
+				63B7DCD3816F4B27BC4A890E /* glui_node.cpp */,
+				3539D5137C084A2EA1FA17FB /* glui_panel.cpp */,
+				32894431B4F9424E9015778B /* glui_radio.cpp */,
+				29A2552269B248439BE67D3F /* glui_rollout.cpp */,
+				1E3F074AED43436CACD73576 /* glui_rotation.cpp */,
+				060A8C1F09674739BCEADDC5 /* glui_scrollbar.cpp */,
+				DD28A74EB4024EA28AF4257A /* glui_separator.cpp */,
+				CC20D30666E14480A6F8007B /* glui_spinner.cpp */,
+				6493EEA883EA4CB880AEEEE9 /* glui_statictext.cpp */,
+				0227136F1279478EAAF3344A /* glui_string.cpp */,
+				6DEBEB2250CE4706A5070056 /* glui_textbox.cpp */,
+				C21C4DB3A5FC4AC59D32D741 /* glui_translation.cpp */,
+				F5497B4A1A014E6987594DF4 /* glui_tree.cpp */,
+				F933717A1525472693D41DF6 /* glui_treepanel.cpp */,
+				96C82F42BBAA4135AE1E9653 /* glui_window.cpp */,
+				6B056F71CAA947EEB778C8E8 /* quaternion.cpp */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		89D9C0A06D9E4881B55456F7 /* Rope */ = {
+			isa = PBXGroup;
+			children = (
+				B91807A52EDD40479097959E /* b2Rope.cpp */,
+				9E0223562A724556BF925D80 /* b2Rope.h */,
+			);
+			name = Rope;
+			sourceTree = "<group>";
+		};
+		9A194DFB04654424B39B7236 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		9C83C00B5BC54E338F130091 /* ALL_BUILD */ = {
+			isa = PBXGroup;
+			children = (
+				673947EE4BEF4AC6B53B5E70 /* CMake Rules */,
+				EE5AAAAE20FD44CFA10F6AE6 /* CMakeLists.txt */,
+			);
+			name = ALL_BUILD;
+			sourceTree = "<group>";
+		};
+		A9A0515DFB1843EC8F9BA4C5 /* Box2D */ = {
+			isa = PBXGroup;
+			children = (
+				B232F8568C224AC5BF1E5253 /* Include */,
+				0BC982236C7643D6A35A610C /* Dynamics */,
+				40EFF5661D8E40E4B18B8E40 /* Common */,
+				18D3EA09D18A4C2EBA52553F /* Collision */,
+				89D9C0A06D9E4881B55456F7 /* Rope */,
+				01285E58A3644B8AB64347C2 /* CMakeLists.txt */,
+			);
+			name = Box2D;
+			sourceTree = "<group>";
+		};
+		B232F8568C224AC5BF1E5253 /* Include */ = {
+			isa = PBXGroup;
+			children = (
+				C944DD740F3F4DC69A928C02 /* Box2D.h */,
+			);
+			name = Include;
+			sourceTree = "<group>";
+		};
+		B49FE0A15B5E4BF5B35132BE = {
+			isa = PBXGroup;
+			children = (
+				C6F6E21394964C288638F62A /* Sources */,
+				9A194DFB04654424B39B7236 /* Resources */,
+				4F1AEA85218B4EB9B480E72D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C6F6E21394964C288638F62A /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				9C83C00B5BC54E338F130091 /* ALL_BUILD */,
+				80E3D7643D5A49658A56473F /* ZERO_CHECK */,
+				A9A0515DFB1843EC8F9BA4C5 /* Box2D */,
+				F0AFD1A8744B4B9CB102AB96 /* HelloWorld */,
+				02460A806CC34E9FAA1CDA7A /* freeglut_static */,
+				6276777946F34666A0A53CEF /* glui */,
+				66FF2B548DE646199E49C60C /* Testbed */,
+			);
+			name = Sources;
+			sourceTree = "<group>";
+		};
+		F0AFD1A8744B4B9CB102AB96 /* HelloWorld */ = {
+			isa = PBXGroup;
+			children = (
+				7233DF8E923849E68BE96052 /* Source Files */,
+				AB5EAE9ECAD845F480379561 /* CMakeLists.txt */,
+			);
+			name = HelloWorld;
+			sourceTree = "<group>";
+		};
+		F8032B6A614E470985ACB70B /* CMake Rules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "CMake Rules";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9EB052CACC4A464980CA12C5 /* freeglut_static */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 80C50C234DC24965B0345A66 /* Build configuration list for PBXNativeTarget "freeglut_static" */;
+			buildPhases = (
+				909612A3AF664C4ABF508DC4 /* Sources */,
+				6F6E6BA52A73407C989D1B33 /* CMake PostBuild Rules */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				26FD559933234319A3BCC3AC /* PBXTargetDependency */,
+			);
+			name = freeglut_static;
+			productName = freeglut_static;
+			productReference = FBF2735501114C94A0E0EFC5 /* libfreeglut_static.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		A4C4E4F27AF04A97B0394DFB /* glui */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B2ADE20A639B4DDC89FF993D /* Build configuration list for PBXNativeTarget "glui" */;
+			buildPhases = (
+				44D6201B81FE468CAAF82B25 /* Sources */,
+				0A66474B03D44B9F95A6A7EB /* CMake PostBuild Rules */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CB9765A22FD341148C15C7FC /* PBXTargetDependency */,
+			);
+			name = glui;
+			productName = glui;
+			productReference = AA0191FC340C444F8DCC31E3 /* libglui.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		A6666BE2FDF04E458E1A0F16 /* Testbed */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D1CDFA927E3C47F48F6E7723 /* Build configuration list for PBXNativeTarget "Testbed" */;
+			buildPhases = (
+				0C1FCFEC9A7D4D2A9388DE71 /* Sources */,
+				7205A9A04C124E58B7EE5864 /* CMake PostBuild Rules */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2ED0B1D67F0841698EE69038 /* PBXTargetDependency */,
+				A45BC0FEECB84B849BFAC27D /* PBXTargetDependency */,
+				15334AEE8B6A43FF8CDAAB01 /* PBXTargetDependency */,
+				BAA308C615A44A0B96178A36 /* PBXTargetDependency */,
+			);
+			name = Testbed;
+			productName = Testbed;
+			productReference = BA4CD342E787427891711E27 /* Testbed */;
+			productType = "com.apple.product-type.tool";
+		};
+		B76588D53C094B438B4B3CCD /* Box2D */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DD79EFC279CA49F18A4D49CD /* Build configuration list for PBXNativeTarget "Box2D" */;
+			buildPhases = (
+				8A35C27693EF423B902E93EB /* Sources */,
+				E0285A4DD6B9415682FDD008 /* CMake PostBuild Rules */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9C484D6864754D1BA4A69665 /* PBXTargetDependency */,
+			);
+			name = Box2D;
+			productName = Box2D;
+			productReference = 4349967AF13240BBA4F8BCAB /* libBox2D.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		E636D5D326F2462981FF2655 /* HelloWorld */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 74B9931A3ACC40379EAB5CD2 /* Build configuration list for PBXNativeTarget "HelloWorld" */;
+			buildPhases = (
+				97004C5B0EF14954B30D3927 /* Sources */,
+				E7A512090D924890B1816B2C /* CMake PostBuild Rules */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				883C8C6DD2F44EAF85B16FA3 /* PBXTargetDependency */,
+				1F7BE0BC7E3B4328816F35A1 /* PBXTargetDependency */,
+			);
+			name = HelloWorld;
+			productName = HelloWorld;
+			productReference = B2F5665117054653A683256C /* HelloWorld */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		99EFFAE99CFC4A21B7C98518 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+			};
+			buildConfigurationList = 070CE962AF26405CBAE7DEAA /* Build configuration list for PBXProject "Box2D" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = B49FE0A15B5E4BF5B35132BE;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1628472B8699474BB678445C /* ALL_BUILD */,
+				0A9EB83F28AF4C06B667574A /* ZERO_CHECK */,
+				5A739FA3408A415F9975B833 /* install */,
+				B76588D53C094B438B4B3CCD /* Box2D */,
+				E636D5D326F2462981FF2655 /* HelloWorld */,
+				9EB052CACC4A464980CA12C5 /* freeglut_static */,
+				A4C4E4F27AF04A97B0394DFB /* glui */,
+				A6666BE2FDF04E458E1A0F16 /* Testbed */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0A66474B03D44B9F95A6A7EB /* CMake PostBuild Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake PostBuild Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/TenmaYusuke/Desktop/Box2D_v2.3.0/Box2D/glui -f /Users/TenmaYusuke/Desktop/Box2D_v2.3.0/Box2D/glui/CMakeScripts/glui_postBuildPhase.make$CONFIGURATION all";
+			showEnvVarsInLog = 0;
+		};
+		1E8B48EC27EA4371AAEDF333 /* CMake PostBuild Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake PostBuild Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/TenmaYusuke/Desktop/Box2D_v2.3.0/Box2D -f /Users/TenmaYusuke/Desktop/Box2D_v2.3.0/Box2D/CMakeScripts/install_postBuildPhase.make$CONFIGURATION all";
+			showEnvVarsInLog = 0;
+		};
+		4925B7150D554D8BBDE3BFF9 /* CMake Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/TenmaYusuke/Desktop/Box2D_v2.3.0/Box2D -f /Users/TenmaYusuke/Desktop/Box2D_v2.3.0/Box2D/CMakeScripts/ZERO_CHECK_cmakeRulesBuildPhase.make$CONFIGURATION all";
+			showEnvVarsInLog = 0;
+		};
+		6F6E6BA52A73407C989D1B33 /* CMake PostBuild Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake PostBuild Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/TenmaYusuke/Desktop/Box2D_v2.3.0/Box2D/freeglut -f /Users/TenmaYusuke/Desktop/Box2D_v2.3.0/Box2D/freeglut/CMakeScripts/freeglut_static_postBuildPhase.make$CONFIGURATION all";
+			showEnvVarsInLog = 0;
+		};
+		7205A9A04C124E58B7EE5864 /* CMake PostBuild Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake PostBuild Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/TenmaYusuke/Desktop/Box2D_v2.3.0/Box2D/Testbed -f /Users/TenmaYusuke/Desktop/Box2D_v2.3.0/Box2D/Testbed/CMakeScripts/Testbed_postBuildPhase.make$CONFIGURATION all";
+			showEnvVarsInLog = 0;
+		};
+		95B9E7930D26464FBD920DAC /* CMake Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/TenmaYusuke/Desktop/Box2D_v2.3.0/Box2D -f /Users/TenmaYusuke/Desktop/Box2D_v2.3.0/Box2D/CMakeScripts/ALL_BUILD_cmakeRulesBuildPhase.make$CONFIGURATION all";
+			showEnvVarsInLog = 0;
+		};
+		E0285A4DD6B9415682FDD008 /* CMake PostBuild Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake PostBuild Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/TenmaYusuke/Desktop/Box2D_v2.3.0/Box2D/Box2D -f /Users/TenmaYusuke/Desktop/Box2D_v2.3.0/Box2D/Box2D/CMakeScripts/Box2D_postBuildPhase.make$CONFIGURATION all";
+			showEnvVarsInLog = 0;
+		};
+		E7A512090D924890B1816B2C /* CMake PostBuild Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake PostBuild Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/TenmaYusuke/Desktop/Box2D_v2.3.0/Box2D/HelloWorld -f /Users/TenmaYusuke/Desktop/Box2D_v2.3.0/Box2D/HelloWorld/CMakeScripts/HelloWorld_postBuildPhase.make$CONFIGURATION all";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0C1FCFEC9A7D4D2A9388DE71 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0C5BC9B2638849FC89F1C04D /* Main.cpp in Sources */,
+				6E736468789648448B71EE26 /* Render.cpp in Sources */,
+				56656D5071D34DD18D351BA1 /* Test.cpp in Sources */,
+				2047261B868B49D48BE18B24 /* TestEntries.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		44D6201B81FE468CAAF82B25 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				26A1939DC61446148F4E9FCE /* algebra3.cpp in Sources */,
+				910769C771154C8981C03E64 /* arcball.cpp in Sources */,
+				37435D69D6A343168DC8E390 /* glui.cpp in Sources */,
+				25619811871B461DBEF275D2 /* glui_add_controls.cpp in Sources */,
+				5849C60D535D4511973BA8C0 /* glui_bitmap_img_data.cpp in Sources */,
+				0450FA4DAD024C459CDB88DE /* glui_bitmaps.cpp in Sources */,
+				214BCAA618A74F3781574550 /* glui_button.cpp in Sources */,
+				0D68BA95709740899898716C /* glui_checkbox.cpp in Sources */,
+				E8A553E9DB56442E98F157FF /* glui_column.cpp in Sources */,
+				35E82C76B35944F2AE2848AE /* glui_commandline.cpp in Sources */,
+				FF988637F6004B03B309DF1C /* glui_control.cpp in Sources */,
+				47EA79C5751745358EF263A1 /* glui_edittext.cpp in Sources */,
+				28FB424578D6411E815AC1E3 /* glui_filebrowser.cpp in Sources */,
+				03DA6BA96842423E83D998BE /* glui_list.cpp in Sources */,
+				837BE83F3AEB4F94B8CD01BE /* glui_listbox.cpp in Sources */,
+				DEFDE77328C542649B02A438 /* glui_mouse_iaction.cpp in Sources */,
+				D8891FECB6F44D21BFEB929D /* glui_node.cpp in Sources */,
+				64B57E05D98E434DB64FFD9E /* glui_panel.cpp in Sources */,
+				05C84E699392454687B2276F /* glui_radio.cpp in Sources */,
+				BA8E749208C5451695B6F253 /* glui_rollout.cpp in Sources */,
+				9F365E8C32074B8A82613376 /* glui_rotation.cpp in Sources */,
+				1A8C4907B5C646A8BEDC3B94 /* glui_scrollbar.cpp in Sources */,
+				6D898359CB91440797C5D3CE /* glui_separator.cpp in Sources */,
+				A585C0E58A9C4C4CA22B43C2 /* glui_spinner.cpp in Sources */,
+				94A151CDF0DD4D778EF7A641 /* glui_statictext.cpp in Sources */,
+				A12920B0A2CB48869129B1D8 /* glui_string.cpp in Sources */,
+				561A0A4524D24F0F8C160B67 /* glui_textbox.cpp in Sources */,
+				CF03BA668BE24F229DB8FA65 /* glui_translation.cpp in Sources */,
+				748527A6043A4B9CA7752841 /* glui_tree.cpp in Sources */,
+				10E0E3818C52456F9BAD8232 /* glui_treepanel.cpp in Sources */,
+				F76711F217B74F248AEB38A1 /* glui_window.cpp in Sources */,
+				B381F113DF2E41FB8D6AEAA5 /* quaternion.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8A35C27693EF423B902E93EB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5489E74FCF82484FB866FE96 /* b2ChainShape.cpp in Sources */,
+				CF16BE5DA9D34E67AB8F6B51 /* b2CircleShape.cpp in Sources */,
+				392991BCEE2D4313BB119DAD /* b2EdgeShape.cpp in Sources */,
+				715AEFC83B7147279BC8F7AE /* b2PolygonShape.cpp in Sources */,
+				D448FAB67F3246FFAD2C16DB /* b2BroadPhase.cpp in Sources */,
+				A01D347ACDB24810AED2FCFC /* b2CollideCircle.cpp in Sources */,
+				CA9EF841B1A049BD9137098A /* b2CollideEdge.cpp in Sources */,
+				9CEA88D8B6004D52BA1FCF71 /* b2CollidePolygon.cpp in Sources */,
+				7F4E679AB121449799C8B7CA /* b2Collision.cpp in Sources */,
+				EA64303C3AE647509041C32D /* b2Distance.cpp in Sources */,
+				EFCD6DC22C7544588D132684 /* b2DynamicTree.cpp in Sources */,
+				DFA52E67992A431180A28766 /* b2TimeOfImpact.cpp in Sources */,
+				FE2607A74B004A18BD525C8F /* b2BlockAllocator.cpp in Sources */,
+				15B2FCD619F64FE6B46550AB /* b2Draw.cpp in Sources */,
+				8463FD278B3A4FC1BF9DF728 /* b2Math.cpp in Sources */,
+				1BC6F533ECF84116AB6682C0 /* b2Settings.cpp in Sources */,
+				99E30F7C9DA940B9B1417CA2 /* b2StackAllocator.cpp in Sources */,
+				11BB324DAF4E446DAE7E58DD /* b2Timer.cpp in Sources */,
+				0DCC01E679674112B18C5D85 /* b2ChainAndCircleContact.cpp in Sources */,
+				6A260E25F2334F18B15FF617 /* b2ChainAndPolygonContact.cpp in Sources */,
+				B93B312B4A10480CA7D1C69B /* b2CircleContact.cpp in Sources */,
+				EB20FC5FF71C4DDA96DD5BB4 /* b2Contact.cpp in Sources */,
+				EB3F6FA99D3E45E28CC99791 /* b2ContactSolver.cpp in Sources */,
+				863A261887D246DD95819262 /* b2EdgeAndCircleContact.cpp in Sources */,
+				9A34ECF7E9F544C18B5FEE09 /* b2EdgeAndPolygonContact.cpp in Sources */,
+				6BC52303D72D4051AE434F78 /* b2PolygonAndCircleContact.cpp in Sources */,
+				7DA481FC3F6140C9B79C0D69 /* b2PolygonContact.cpp in Sources */,
+				872F1C4C849A4232AAC23CEE /* b2DistanceJoint.cpp in Sources */,
+				4D5EC8F641E44E48806CDBE1 /* b2FrictionJoint.cpp in Sources */,
+				E39F805EC76D4B88903020E1 /* b2GearJoint.cpp in Sources */,
+				9583F0FD853042B09A414973 /* b2Joint.cpp in Sources */,
+				82DBFE4469694AB1BC32E518 /* b2MotorJoint.cpp in Sources */,
+				13204FDD88B34E36B0853210 /* b2MouseJoint.cpp in Sources */,
+				7ECBF514D9504911B9C90541 /* b2PrismaticJoint.cpp in Sources */,
+				F98EEEDDFEC04D95B622287C /* b2PulleyJoint.cpp in Sources */,
+				F5E838528AB4495DA264F24F /* b2RevoluteJoint.cpp in Sources */,
+				DD1BD0A607BB4BF4A9BDB07F /* b2RopeJoint.cpp in Sources */,
+				BA2712234C404AFBA6EF059B /* b2WeldJoint.cpp in Sources */,
+				FE823CD9885F4F6E97D7EFE0 /* b2WheelJoint.cpp in Sources */,
+				DFBFF9BDAA6E4BF1A18CB195 /* b2Body.cpp in Sources */,
+				5946AEA2837C4C5390EA6D32 /* b2ContactManager.cpp in Sources */,
+				F895CFDE066D479A851BAA82 /* b2Fixture.cpp in Sources */,
+				63F7D16A21374AE49DE3041C /* b2Island.cpp in Sources */,
+				629370F2C2CE4D87B6C0FF51 /* b2World.cpp in Sources */,
+				D0F522BB74B6450F832F640B /* b2WorldCallbacks.cpp in Sources */,
+				0EFBD2369FB24C339C482D1E /* b2Rope.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		909612A3AF664C4ABF508DC4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4A3F93358D91495F8CA1DC41 /* freeglut_callbacks.c in Sources */,
+				F2F702456A8C413693324EE2 /* freeglut_cursor.c in Sources */,
+				BD1DE538137A48A29A1968B1 /* freeglut_display.c in Sources */,
+				21669F574C1F4C99B7487A3D /* freeglut_ext.c in Sources */,
+				A460FD80E7604B22B4D8DABC /* freeglut_font.c in Sources */,
+				4D1AC6FFF9B94D5BAC6575C8 /* freeglut_font_data.c in Sources */,
+				4461553BAC074F7383724057 /* freeglut_geometry.c in Sources */,
+				849697FB03BB4ED7BA8180E1 /* freeglut_glutfont_definitions.c in Sources */,
+				6B316E7E626A45959A9F0910 /* freeglut_init.c in Sources */,
+				936D06DF9BC24557AE408F43 /* freeglut_input_devices.c in Sources */,
+				E4C4929FC035460F8814A714 /* freeglut_joystick.c in Sources */,
+				73D93736003A41108D98C8A8 /* freeglut_main.c in Sources */,
+				174DFDAE446841598E54CCA3 /* freeglut_menu.c in Sources */,
+				E11FA4BC4BD2466599006F1F /* freeglut_misc.c in Sources */,
+				0B8601F246EB465EBAB3EBED /* freeglut_overlay.c in Sources */,
+				A4AE7A303B3747648C822006 /* freeglut_spaceball.c in Sources */,
+				A5EFF7CD4BD74FC3B944493D /* freeglut_state.c in Sources */,
+				32208F1B9B974B16AB705376 /* freeglut_stroke_mono_roman.c in Sources */,
+				37D632CE31474179BBBCBA8F /* freeglut_stroke_roman.c in Sources */,
+				9440554F4F0A4F33A194E2F3 /* freeglut_structure.c in Sources */,
+				99A2535D6EE74274A9337EC5 /* freeglut_teapot.c in Sources */,
+				0DC614332AB74AE1BA0F9DFC /* freeglut_videoresize.c in Sources */,
+				8620EC3DE9B44D27B5A224B8 /* freeglut_window.c in Sources */,
+				4173507319A6374A0083A32E /* freeglut_gamemode.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		97004C5B0EF14954B30D3927 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				530B0BFF95074DBCBD01FC0F /* HelloWorld.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		15334AEE8B6A43FF8CDAAB01 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9EB052CACC4A464980CA12C5 /* freeglut_static */;
+			targetProxy = B1FD82FA108649DB8648BF67 /* PBXContainerItemProxy */;
+		};
+		1F7BE0BC7E3B4328816F35A1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B76588D53C094B438B4B3CCD /* Box2D */;
+			targetProxy = 75358624B49740D5AA2CC194 /* PBXContainerItemProxy */;
+		};
+		26FD559933234319A3BCC3AC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0A9EB83F28AF4C06B667574A /* ZERO_CHECK */;
+			targetProxy = 7BE70ACE1AC2495BA0EFB3F2 /* PBXContainerItemProxy */;
+		};
+		2ED0B1D67F0841698EE69038 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0A9EB83F28AF4C06B667574A /* ZERO_CHECK */;
+			targetProxy = 13DD2AC89EA2446AA3331247 /* PBXContainerItemProxy */;
+		};
+		2FF5ACFFC13B4F58A55113CF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A4C4E4F27AF04A97B0394DFB /* glui */;
+			targetProxy = C16DB68C36AC4A93AC32B7D0 /* PBXContainerItemProxy */;
+		};
+		41A8781B4A114E8F9F487E63 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A6666BE2FDF04E458E1A0F16 /* Testbed */;
+			targetProxy = B58B12C228F44580922E8DCC /* PBXContainerItemProxy */;
+		};
+		883C8C6DD2F44EAF85B16FA3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0A9EB83F28AF4C06B667574A /* ZERO_CHECK */;
+			targetProxy = B1DFEE885BEE4F59AD03F9E3 /* PBXContainerItemProxy */;
+		};
+		9C484D6864754D1BA4A69665 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0A9EB83F28AF4C06B667574A /* ZERO_CHECK */;
+			targetProxy = ADD107CB02F243C99931C421 /* PBXContainerItemProxy */;
+		};
+		A047AB2559144097B0BC5416 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0A9EB83F28AF4C06B667574A /* ZERO_CHECK */;
+			targetProxy = 511F44D4E86749A7BDBA21DC /* PBXContainerItemProxy */;
+		};
+		A45BC0FEECB84B849BFAC27D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A4C4E4F27AF04A97B0394DFB /* glui */;
+			targetProxy = 42E704C244D64235945A4FA0 /* PBXContainerItemProxy */;
+		};
+		AED45BCDA59E4AD6B3A6A670 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B76588D53C094B438B4B3CCD /* Box2D */;
+			targetProxy = 1642F1AF04D646C1BFD3E074 /* PBXContainerItemProxy */;
+		};
+		BAA308C615A44A0B96178A36 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B76588D53C094B438B4B3CCD /* Box2D */;
+			targetProxy = 6A892CB3E05F44F8A9A360FB /* PBXContainerItemProxy */;
+		};
+		CB9765A22FD341148C15C7FC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0A9EB83F28AF4C06B667574A /* ZERO_CHECK */;
+			targetProxy = 5DF24117BB164546A89A8A07 /* PBXContainerItemProxy */;
+		};
+		E1F5FF6BF4484A24BB93F41C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E636D5D326F2462981FF2655 /* HelloWorld */;
+			targetProxy = DC501E77463E43ED88C14A37 /* PBXContainerItemProxy */;
+		};
+		E78EF0959E4F4D4BA46CA355 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1628472B8699474BB678445C /* ALL_BUILD */;
+			targetProxy = F750573A70D14699A5270149 /* PBXContainerItemProxy */;
+		};
+		F9F494009E9E4AFA88C4E9F1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9EB052CACC4A464980CA12C5 /* freeglut_static */;
+			targetProxy = 353D80C6248F46EA8EACB4F8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		160FAC1EA25B413B93F9242F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = /Users/TenmaYusuke/Desktop/Box2D_v2.3.0/Box2D;
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CFLAGS = (
+					"-DNDEBUG",
+				);
+				OTHER_CPLUSPLUSFLAGS = (
+					"-DNDEBUG",
+				);
+				OTHER_LDFLAGS = (
+					"-Wl,-search_paths_first",
+					"-Wl,-headerpad_max_install_names",
+					/Users/TenmaYusuke/Desktop/Box2D_v2.3.0/Box2D/Box2D/Release/libBox2D.a,
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = HelloWorld;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/TenmaYusuke/Desktop/Box2D_v2.3.0/Box2D/HelloWorld;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = Release;
+		};
+		1674ADCE67AB4590BD3703FE /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.7.sdk;
+				SYMROOT = /Users/TenmaYusuke/Desktop/Box2D_v2.3.0/Box2D/build;
+			};
+			name = MinSizeRel;
+		};
+		1FA2E7961D8E4787A1680B8C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = /Users/TenmaYusuke/Desktop/Box2D_v2.3.0/Box2D/Box2D/..;
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CFLAGS = (
+					"-DNDEBUG",
+				);
+				OTHER_CPLUSPLUSFLAGS = (
+					"-DNDEBUG",
+				);
+				OTHER_LDFLAGS = "";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = Box2D;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/TenmaYusuke/Desktop/Box2D_v2.3.0/Box2D/Box2D;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = Release;
+		};
+		2880C65854B54102ACE3922D /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_CFLAGS = (
+				);
+				OTHER_LDFLAGS = "";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/TenmaYusuke/Desktop/Box2D_v2.3.0/Box2D;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = MinSizeRel;
+		};
+		2F13477E8C5A4A36A3E48E7B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				FRAMEWORK_SEARCH_PATHS = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.7.sdk/System/Library/Frameworks;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					FREEGLUT_EXPORTS,
+					FREEGLUT_STATIC,
+					_CRT_SECURE_NO_WARNINGS,
+					__unix__,
+					HAVE_FCNTL_H,
+					HAVE_GETTIMEOFDAY,
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/usr/X11/include,
+					/Users/TenmaYusuke/Desktop/Box2D_v2.3.0/Box2D/freeglut/.,
+				);
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CFLAGS = (
+				);
+				OTHER_LDFLAGS = "";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = freeglut_static;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/TenmaYusuke/Desktop/Box2D_v2.3.0/Box2D/freeglut;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = Debug;
+		};
+		32FECE15CA4E4B65B50E3F69 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = /Users/TenmaYusuke/Desktop/Box2D_v2.3.0/Box2D;
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CFLAGS = (
+					"-DNDEBUG",
+				);
+				OTHER_CPLUSPLUSFLAGS = (
+					"-DNDEBUG",
+				);
+				OTHER_LDFLAGS = (
+					"-Wl,-search_paths_first",
+					"-Wl,-headerpad_max_install_names",
+					/Users/TenmaYusuke/Desktop/Box2D_v2.3.0/Box2D/Box2D/MinSizeRel/libBox2D.a,
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = HelloWorld;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/TenmaYusuke/Desktop/Box2D_v2.3.0/Box2D/HelloWorld;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = MinSizeRel;
+		};
+		336ED8E9383C48F6ADF7A418 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = /Users/TenmaYusuke/Desktop/Box2D_v2.3.0/Box2D/Box2D/..;
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CFLAGS = (
+					"-DNDEBUG",
+				);
+				OTHER_CPLUSPLUSFLAGS = (
+					"-DNDEBUG",
+				);
+				OTHER_LDFLAGS = "";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = Box2D;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/TenmaYusuke/Desktop/Box2D_v2.3.0/Box2D/Box2D;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = RelWithDebInfo;
+		};
+		42BA9D7935D040499A514EA1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_CFLAGS = (
+				);
+				OTHER_LDFLAGS = "";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = install;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/TenmaYusuke/Desktop/Box2D_v2.3.0/Box2D;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = Debug;
+		};
+		43F614B4A4FB49929AA78448 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_CFLAGS = (
+				);
+				OTHER_LDFLAGS = "";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/TenmaYusuke/Desktop/Box2D_v2.3.0/Box2D;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = Debug;
+		};
+		4927161754974EE1BC377525 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				FRAMEWORK_SEARCH_PATHS = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.7.sdk/System/Library/Frameworks;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					FREEGLUT_EXPORTS,
+					FREEGLUT_STATIC,
+					_CRT_SECURE_NO_WARNINGS,
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/Users/TenmaYusuke/Desktop/Box2D_v2.3.0/Box2D,
+					/usr/X11/include,
+				);
+				INSTALL_PATH = "";
+				LD_RUNPATH_SEARCH_PATHS = /usr/X11/lib;
+				LIBRARY_SEARCH_PATHS = (
+					"/usr/X11/lib/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)",
+					/usr/X11/lib,
+				);
+				OTHER_CFLAGS = (
+					"-DNDEBUG",
+				);
+				OTHER_CPLUSPLUSFLAGS = (
+					"-DNDEBUG",
+				);
+				OTHER_LDFLAGS = (
+					"-Wl,-search_paths_first",
+					"-Wl,-headerpad_max_install_names",
+					/Users/TenmaYusuke/Desktop/Box2D_v2.3.0/Box2D/Box2D/MinSizeRel/libBox2D.a,
+					/Users/TenmaYusuke/Desktop/Box2D_v2.3.0/Box2D/freeglut/MinSizeRel/libfreeglut_static.a,
+					/Users/TenmaYusuke/Desktop/Box2D_v2.3.0/Box2D/glui/MinSizeRel/libglui.a,
+					"-lGL",
+					"-lGLU",
+					"-lGLUT",
+					"-lX11",
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = Testbed;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/TenmaYusuke/Desktop/Box2D_v2.3.0/Box2D/Testbed;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = MinSizeRel;
+		};
+		4C62A3DC83F04E6C814D2152 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_CFLAGS = (
+				);
+				OTHER_LDFLAGS = "";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/TenmaYusuke/Desktop/Box2D_v2.3.0/Box2D;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = RelWithDebInfo;
+		};
+		6036CC3544E84FB3BDC251EA /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_CFLAGS = (
+				);
+				OTHER_LDFLAGS = "";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = install;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/TenmaYusuke/Desktop/Box2D_v2.3.0/Box2D;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = RelWithDebInfo;
+		};
+		626FA0BC8F444FD58AA1878C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				FRAMEWORK_SEARCH_PATHS = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.7.sdk/System/Library/Frameworks;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					FREEGLUT_STATIC,
+					_CRT_SECURE_NO_WARNINGS,
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = /Users/TenmaYusuke/Desktop/Box2D_v2.3.0/Box2D/glui/..;
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CFLAGS = (
+					"-DNDEBUG",
+				);
+				OTHER_CPLUSPLUSFLAGS = (
+					"-DNDEBUG",
+				);
+				OTHER_LDFLAGS = "";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = glui;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/TenmaYusuke/Desktop/Box2D_v2.3.0/Box2D/glui;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = Release;
+		};
+		65A5E165CA2D490AA14B6A61 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				FRAMEWORK_SEARCH_PATHS = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.7.sdk/System/Library/Frameworks;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					FREEGLUT_EXPORTS,
+					FREEGLUT_STATIC,
+					_CRT_SECURE_NO_WARNINGS,
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/Users/TenmaYusuke/Desktop/Box2D_v2.3.0/Box2D,
+					/usr/X11/include,
+				);
+				INSTALL_PATH = "";
+				LD_RUNPATH_SEARCH_PATHS = /usr/X11/lib;
+				LIBRARY_SEARCH_PATHS = (
+					"/usr/X11/lib/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)",
+					/usr/X11/lib,
+				);
+				OTHER_CFLAGS = (
+					"-DNDEBUG",
+				);
+				OTHER_CPLUSPLUSFLAGS = (
+					"-DNDEBUG",
+				);
+				OTHER_LDFLAGS = (
+					"-Wl,-search_paths_first",
+					"-Wl,-headerpad_max_install_names",
+					/Users/TenmaYusuke/Desktop/Box2D_v2.3.0/Box2D/Box2D/RelWithDebInfo/libBox2D.a,
+					/Users/TenmaYusuke/Desktop/Box2D_v2.3.0/Box2D/freeglut/RelWithDebInfo/libfreeglut_static.a,
+					/Users/TenmaYusuke/Desktop/Box2D_v2.3.0/Box2D/glui/RelWithDebInfo/libglui.a,
+					"-lGL",
+					"-lGLU",
+					"-lGLUT",
+					"-lX11",
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = Testbed;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/TenmaYusuke/Desktop/Box2D_v2.3.0/Box2D/Testbed;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = RelWithDebInfo;
+		};
+		66CA66D47DBA490B99676C14 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				FRAMEWORK_SEARCH_PATHS = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.7.sdk/System/Library/Frameworks;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					FREEGLUT_STATIC,
+					_CRT_SECURE_NO_WARNINGS,
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = /Users/TenmaYusuke/Desktop/Box2D_v2.3.0/Box2D/glui/..;
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CFLAGS = (
+					"-DNDEBUG",
+				);
+				OTHER_CPLUSPLUSFLAGS = (
+					"-DNDEBUG",
+				);
+				OTHER_LDFLAGS = "";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = glui;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/TenmaYusuke/Desktop/Box2D_v2.3.0/Box2D/glui;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = MinSizeRel;
+		};
+		694F104236AA4A2688091A80 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.7.sdk;
+				SYMROOT = /Users/TenmaYusuke/Desktop/Box2D_v2.3.0/Box2D/build;
+			};
+			name = RelWithDebInfo;
+		};
+		69686D34B7F64706B810377A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				FRAMEWORK_SEARCH_PATHS = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.7.sdk/System/Library/Frameworks;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					FREEGLUT_STATIC,
+					_CRT_SECURE_NO_WARNINGS,
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = /Users/TenmaYusuke/Desktop/Box2D_v2.3.0/Box2D/glui/..;
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CFLAGS = (
+				);
+				OTHER_CPLUSPLUSFLAGS = (
+				);
+				OTHER_LDFLAGS = "";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = glui;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/TenmaYusuke/Desktop/Box2D_v2.3.0/Box2D/glui;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = Debug;
+		};
+		6D468E4570B8413A9C55B9AE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				FRAMEWORK_SEARCH_PATHS = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.7.sdk/System/Library/Frameworks;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					FREEGLUT_EXPORTS,
+					FREEGLUT_STATIC,
+					_CRT_SECURE_NO_WARNINGS,
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/Users/TenmaYusuke/Desktop/Box2D_v2.3.0/Box2D,
+					/usr/X11/include,
+				);
+				INSTALL_PATH = "";
+				LD_RUNPATH_SEARCH_PATHS = /usr/X11/lib;
+				LIBRARY_SEARCH_PATHS = (
+					"/usr/X11/lib/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)",
+					/usr/X11/lib,
+				);
+				OTHER_CFLAGS = (
+					"-DNDEBUG",
+				);
+				OTHER_CPLUSPLUSFLAGS = (
+					"-DNDEBUG",
+				);
+				OTHER_LDFLAGS = (
+					"-Wl,-search_paths_first",
+					"-Wl,-headerpad_max_install_names",
+					/Users/TenmaYusuke/Desktop/Box2D_v2.3.0/Box2D/Box2D/Release/libBox2D.a,
+					/Users/TenmaYusuke/Desktop/Box2D_v2.3.0/Box2D/freeglut/Release/libfreeglut_static.a,
+					/Users/TenmaYusuke/Desktop/Box2D_v2.3.0/Box2D/glui/Release/libglui.a,
+					"-lGL",
+					"-lGLU",
+					"-lGLUT",
+					"-lX11",
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = Testbed;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/TenmaYusuke/Desktop/Box2D_v2.3.0/Box2D/Testbed;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = Release;
+		};
+		83B3698EC5D142E7B2D10800 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = /Users/TenmaYusuke/Desktop/Box2D_v2.3.0/Box2D;
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CFLAGS = (
+				);
+				OTHER_CPLUSPLUSFLAGS = (
+				);
+				OTHER_LDFLAGS = (
+					"-Wl,-search_paths_first",
+					"-Wl,-headerpad_max_install_names",
+					/Users/TenmaYusuke/Desktop/Box2D_v2.3.0/Box2D/Box2D/Debug/libBox2D.a,
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = HelloWorld;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/TenmaYusuke/Desktop/Box2D_v2.3.0/Box2D/HelloWorld;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = Debug;
+		};
+		8A7D949702EC4B85921035F6 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_CFLAGS = (
+				);
+				OTHER_LDFLAGS = "";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/TenmaYusuke/Desktop/Box2D_v2.3.0/Box2D;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = RelWithDebInfo;
+		};
+		8AC0612A3D5F405C8ED0D3FF /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				FRAMEWORK_SEARCH_PATHS = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.7.sdk/System/Library/Frameworks;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					FREEGLUT_STATIC,
+					_CRT_SECURE_NO_WARNINGS,
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = /Users/TenmaYusuke/Desktop/Box2D_v2.3.0/Box2D/glui/..;
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CFLAGS = (
+					"-DNDEBUG",
+				);
+				OTHER_CPLUSPLUSFLAGS = (
+					"-DNDEBUG",
+				);
+				OTHER_LDFLAGS = "";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = glui;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/TenmaYusuke/Desktop/Box2D_v2.3.0/Box2D/glui;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = RelWithDebInfo;
+		};
+		8BD5CF6600354D4C9687EB3C /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_CFLAGS = (
+				);
+				OTHER_LDFLAGS = "";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/TenmaYusuke/Desktop/Box2D_v2.3.0/Box2D;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = MinSizeRel;
+		};
+		9D9004AB820E423086537D5C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				FRAMEWORK_SEARCH_PATHS = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.7.sdk/System/Library/Frameworks;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					FREEGLUT_EXPORTS,
+					FREEGLUT_STATIC,
+					_CRT_SECURE_NO_WARNINGS,
+					__unix__,
+					HAVE_FCNTL_H,
+					HAVE_GETTIMEOFDAY,
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/usr/X11/include,
+					/Users/TenmaYusuke/Desktop/Box2D_v2.3.0/Box2D/freeglut/.,
+				);
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CFLAGS = (
+					"-DNDEBUG",
+				);
+				OTHER_LDFLAGS = "";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = freeglut_static;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/TenmaYusuke/Desktop/Box2D_v2.3.0/Box2D/freeglut;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = Release;
+		};
+		A3A1F9CFC745425BAC149EDB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.7.sdk;
+				SYMROOT = /Users/TenmaYusuke/Desktop/Box2D_v2.3.0/Box2D/build;
+			};
+			name = Release;
+		};
+		B20418BFE3894A2EACDA0B80 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_CFLAGS = (
+				);
+				OTHER_LDFLAGS = "";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = install;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/TenmaYusuke/Desktop/Box2D_v2.3.0/Box2D;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = Release;
+		};
+		B391BBE91DDB4FDD8B007925 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				FRAMEWORK_SEARCH_PATHS = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.7.sdk/System/Library/Frameworks;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					FREEGLUT_EXPORTS,
+					FREEGLUT_STATIC,
+					_CRT_SECURE_NO_WARNINGS,
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/Users/TenmaYusuke/Desktop/Box2D_v2.3.0/Box2D,
+					/usr/X11/include,
+				);
+				INSTALL_PATH = "";
+				LD_RUNPATH_SEARCH_PATHS = /usr/X11/lib;
+				LIBRARY_SEARCH_PATHS = (
+					"/usr/X11/lib/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)",
+					/usr/X11/lib,
+				);
+				OTHER_CFLAGS = (
+				);
+				OTHER_CPLUSPLUSFLAGS = (
+				);
+				OTHER_LDFLAGS = (
+					"-Wl,-search_paths_first",
+					"-Wl,-headerpad_max_install_names",
+					/Users/TenmaYusuke/Desktop/Box2D_v2.3.0/Box2D/Box2D/Debug/libBox2D.a,
+					/Users/TenmaYusuke/Desktop/Box2D_v2.3.0/Box2D/freeglut/Debug/libfreeglut_static.a,
+					/Users/TenmaYusuke/Desktop/Box2D_v2.3.0/Box2D/glui/Debug/libglui.a,
+					"-lGL",
+					"-lGLU",
+					"-lGLUT",
+					"-lX11",
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = Testbed;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/TenmaYusuke/Desktop/Box2D_v2.3.0/Box2D/Testbed;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = Debug;
+		};
+		B768A7CCC34A4AF0BB8099D9 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				FRAMEWORK_SEARCH_PATHS = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.7.sdk/System/Library/Frameworks;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					FREEGLUT_EXPORTS,
+					FREEGLUT_STATIC,
+					_CRT_SECURE_NO_WARNINGS,
+					__unix__,
+					HAVE_FCNTL_H,
+					HAVE_GETTIMEOFDAY,
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/usr/X11/include,
+					/Users/TenmaYusuke/Desktop/Box2D_v2.3.0/Box2D/freeglut/.,
+				);
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CFLAGS = (
+					"-DNDEBUG",
+				);
+				OTHER_LDFLAGS = "";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = freeglut_static;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/TenmaYusuke/Desktop/Box2D_v2.3.0/Box2D/freeglut;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = RelWithDebInfo;
+		};
+		BC43F16D3958405EB0715289 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.7.sdk;
+				SYMROOT = /Users/TenmaYusuke/Desktop/Box2D_v2.3.0/Box2D/build;
+			};
+			name = Debug;
+		};
+		C20A1B01A2454EB68365AD7E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_CFLAGS = (
+				);
+				OTHER_LDFLAGS = "";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/TenmaYusuke/Desktop/Box2D_v2.3.0/Box2D;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = Debug;
+		};
+		C691C1E660154300841546F8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = /Users/TenmaYusuke/Desktop/Box2D_v2.3.0/Box2D/Box2D/..;
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CFLAGS = (
+				);
+				OTHER_CPLUSPLUSFLAGS = (
+				);
+				OTHER_LDFLAGS = "";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = Box2D;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/TenmaYusuke/Desktop/Box2D_v2.3.0/Box2D/Box2D;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = Debug;
+		};
+		C7BD2235BB764DA0A17B44CB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_CFLAGS = (
+				);
+				OTHER_LDFLAGS = "";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/TenmaYusuke/Desktop/Box2D_v2.3.0/Box2D;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = Release;
+		};
+		DEFD302D29F44FFD83966D4B /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_CFLAGS = (
+				);
+				OTHER_LDFLAGS = "";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = install;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/TenmaYusuke/Desktop/Box2D_v2.3.0/Box2D;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = MinSizeRel;
+		};
+		E3384547BD534673AD56DDCA /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = /Users/TenmaYusuke/Desktop/Box2D_v2.3.0/Box2D/Box2D/..;
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CFLAGS = (
+					"-DNDEBUG",
+				);
+				OTHER_CPLUSPLUSFLAGS = (
+					"-DNDEBUG",
+				);
+				OTHER_LDFLAGS = "";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = Box2D;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/TenmaYusuke/Desktop/Box2D_v2.3.0/Box2D/Box2D;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = MinSizeRel;
+		};
+		E62165F84504489590D3A9FB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_CFLAGS = (
+				);
+				OTHER_LDFLAGS = "";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/TenmaYusuke/Desktop/Box2D_v2.3.0/Box2D;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = Release;
+		};
+		E8F70A5034D14B0AAA04EB6C /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = /Users/TenmaYusuke/Desktop/Box2D_v2.3.0/Box2D;
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CFLAGS = (
+					"-DNDEBUG",
+				);
+				OTHER_CPLUSPLUSFLAGS = (
+					"-DNDEBUG",
+				);
+				OTHER_LDFLAGS = (
+					"-Wl,-search_paths_first",
+					"-Wl,-headerpad_max_install_names",
+					/Users/TenmaYusuke/Desktop/Box2D_v2.3.0/Box2D/Box2D/RelWithDebInfo/libBox2D.a,
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = HelloWorld;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/TenmaYusuke/Desktop/Box2D_v2.3.0/Box2D/HelloWorld;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = RelWithDebInfo;
+		};
+		EDF94200B45B4D9BBDD34700 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				FRAMEWORK_SEARCH_PATHS = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.7.sdk/System/Library/Frameworks;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					FREEGLUT_EXPORTS,
+					FREEGLUT_STATIC,
+					_CRT_SECURE_NO_WARNINGS,
+					__unix__,
+					HAVE_FCNTL_H,
+					HAVE_GETTIMEOFDAY,
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/usr/X11/include,
+					/Users/TenmaYusuke/Desktop/Box2D_v2.3.0/Box2D/freeglut/.,
+				);
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CFLAGS = (
+					"-DNDEBUG",
+				);
+				OTHER_LDFLAGS = "";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = freeglut_static;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/TenmaYusuke/Desktop/Box2D_v2.3.0/Box2D/freeglut;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = MinSizeRel;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		070CE962AF26405CBAE7DEAA /* Build configuration list for PBXProject "Box2D" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BC43F16D3958405EB0715289 /* Debug */,
+				A3A1F9CFC745425BAC149EDB /* Release */,
+				1674ADCE67AB4590BD3703FE /* MinSizeRel */,
+				694F104236AA4A2688091A80 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		2616BC7DB11E47AEA8E812E4 /* Build configuration list for PBXAggregateTarget "install" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				42BA9D7935D040499A514EA1 /* Debug */,
+				B20418BFE3894A2EACDA0B80 /* Release */,
+				DEFD302D29F44FFD83966D4B /* MinSizeRel */,
+				6036CC3544E84FB3BDC251EA /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		2957C1A221A44D4AA1541561 /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C20A1B01A2454EB68365AD7E /* Debug */,
+				C7BD2235BB764DA0A17B44CB /* Release */,
+				8BD5CF6600354D4C9687EB3C /* MinSizeRel */,
+				4C62A3DC83F04E6C814D2152 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		74B9931A3ACC40379EAB5CD2 /* Build configuration list for PBXNativeTarget "HelloWorld" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				83B3698EC5D142E7B2D10800 /* Debug */,
+				160FAC1EA25B413B93F9242F /* Release */,
+				32FECE15CA4E4B65B50E3F69 /* MinSizeRel */,
+				E8F70A5034D14B0AAA04EB6C /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		80C50C234DC24965B0345A66 /* Build configuration list for PBXNativeTarget "freeglut_static" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2F13477E8C5A4A36A3E48E7B /* Debug */,
+				9D9004AB820E423086537D5C /* Release */,
+				EDF94200B45B4D9BBDD34700 /* MinSizeRel */,
+				B768A7CCC34A4AF0BB8099D9 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		B2ADE20A639B4DDC89FF993D /* Build configuration list for PBXNativeTarget "glui" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				69686D34B7F64706B810377A /* Debug */,
+				626FA0BC8F444FD58AA1878C /* Release */,
+				66CA66D47DBA490B99676C14 /* MinSizeRel */,
+				8AC0612A3D5F405C8ED0D3FF /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		D1CDFA927E3C47F48F6E7723 /* Build configuration list for PBXNativeTarget "Testbed" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B391BBE91DDB4FDD8B007925 /* Debug */,
+				6D468E4570B8413A9C55B9AE /* Release */,
+				4927161754974EE1BC377525 /* MinSizeRel */,
+				65A5E165CA2D490AA14B6A61 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		DB4D2E523AA440DAAF0D29A1 /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				43F614B4A4FB49929AA78448 /* Debug */,
+				E62165F84504489590D3A9FB /* Release */,
+				2880C65854B54102ACE3922D /* MinSizeRel */,
+				8A7D949702EC4B85921035F6 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		DD79EFC279CA49F18A4D49CD /* Build configuration list for PBXNativeTarget "Box2D" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C691C1E660154300841546F8 /* Debug */,
+				1FA2E7961D8E4787A1680B8C /* Release */,
+				E3384547BD534673AD56DDCA /* MinSizeRel */,
+				336ED8E9383C48F6ADF7A418 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 99EFFAE99CFC4A21B7C98518 /* Project object */;
+}

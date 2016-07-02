@@ -1,0 +1,34 @@
+Tinstall
+v5
+r1
+cCheck dependencies
+cPhaseScriptExecution "CMake PostBuild Rules" /Users/TenmaYusuke/Desktop/Box2D_v2.3.0/Box2D/Box2D.build/Debug/install.build/Script-1E8B48EC27EA4371AAEDF333.sh
+
+N/Users/TenmaYusuke/Desktop/Box2D_v2.3.0/Box2D/Box2D.build/Debug/install.build/Script-1E8B48EC27EA4371AAEDF333.sh
+c0000000053F5FEAC00000000000000AC
+t1408630444
+s172
+
+CCheck dependencies
+r0
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependenciesd07c3e2c36a6b941^17d53e2c36a6b941^---0#1#0#--18"Check dependencies36"056E07D7-56B6-4716-8DA6-ED6D3247A1D4-
+
+CPhaseScriptExecution "CMake PostBuild Rules" /Users/TenmaYusuke/Desktop/Box2D_v2.3.0/Box2D/Box2D.build/Debug/install.build/Script-1E8B48EC27EA4371AAEDF333.sh
+s430323244.246814
+e430323244.367723
+r0
+xPhaseScriptExecution
+xCMake PostBuild Rules
+x/Users/TenmaYusuke/Desktop/Box2D_v2.3.0/Box2D/Box2D.build/Debug/install.build/Script-1E8B48EC27EA4371AAEDF333.sh
+o/Applications/CMake\ 2.8-12.app/Contents/bin/cmake -DBUILD_TYPE=Debug -P cmake_install.cmake
+o-- Install configuration: "Debug"
+oCMake Error at Box2D/cmake_install.cmake:31 (FILE):
+o  file cannot create directory: /usr/local/include/Box2D.  Maybe need
+o  administrative privileges.
+oCall Stack (most recent call first):
+o  cmake_install.cmake:32 (INCLUDE)
+o
+o
+omake: *** [install_buildpart_0] Error 1
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection47"Run custom shell script 'CMake PostBuild Rules'1ba13f2c36a6b941^5e135e2c36a6b941^-432"/Applications/CMake\ 2.8-12.app/Contents/bin/cmake -DBUILD_TYPE=Debug -P cmake_install.cmake-- Install configuration: "Debug"CMake Error at Box2D/cmake_install.cmake:31 (FILE):  file cannot create directory: /usr/local/include/Box2D.  Maybe need  administrative privileges.Call Stack (most recent call first):  cmake_install.cmake:32 (INCLUDE)make: *** [install_buildpart_0] Error 1Command /bin/sh failed with exit code 29(21%IDEActivityLogMessage2@93"/Applications/CMake\ 2.8-12.app/Contents/bin/cmake -DBUILD_TYPE=Debug -P cmake_install.cmake-430323244#0#93#-0#-----2@34"-- Install configuration: "Debug"-430323244#93#34#-0#-----2@52"CMake Error at Box2D/cmake_install.cmake:31 (FILE):-430323244#127#52#-0#-----2@70"  file cannot create directory: /usr/local/include/Box2D.  Maybe need-430323244#179#70#-0#-----2@29"  administrative privileges.-430323244#249#29#-0#-----2@37"Call Stack (most recent call first):-430323244#278#37#-0#-----2@35"  cmake_install.cmake:32 (INCLUDE)-430323244#315#35#-0#-----2@40"make: *** [install_buildpart_0] Error 1-430323244#352#40#-0#-----2@39"Command /bin/sh failed with exit code 2-430323244#18446744073709551615#0#-2#--29"Shell Script Invocation Error--0#0#0#--293"PhaseScriptExecution "CMake PostBuild Rules" Box2D.build/Debug/install.build/Script-1E8B48EC27EA4371AAEDF333.sh    cd /Users/TenmaYusuke/Desktop/Box2D_v2.3.0/Box2D    /bin/sh -c /Users/TenmaYusuke/Desktop/Box2D_v2.3.0/Box2D/Box2D.build/Debug/install.build/Script-1E8B48EC27EA4371AAEDF333.sh36"1A588003-2594-40AB-900B-5277D6A59D1B-
+
